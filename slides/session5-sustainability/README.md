@@ -2,7 +2,10 @@
 
 Chair: Colin Perkins 
 
-Presentations: TBD
+Presentations:
+* Opening Remarks (Colin Perkins)
+* TBD (Christoph Becker)
+* TBD (Daniel Migault)
 
 Relevant papers:
 
