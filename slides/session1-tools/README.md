@@ -1,6 +1,6 @@
 # Session 1: Tools, data, and methods
 
-Chair: Jari Akko
+Chair: Jari Arkko
 
 Presentations on datatracker interface (Robert Sparks), BigBang (Sebastian Benthall), SODESTREAM (Stephen McQuistin), IETF website analytics (Greg Wood).
 
