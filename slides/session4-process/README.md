@@ -2,7 +2,9 @@
 
 Chair: Colin Perkins 
 
-Presentations TBD
+Presentations:
+* Opening Remarks (Colin Perkins)
+* Summary and Provocation (Michael Welzl and Ignacio Castro)
 
 Relevant papers:
 
