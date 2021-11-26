@@ -3,7 +3,7 @@
 Chair: Colin Perkins 
 
 Presentations:
-* Opening Remarks (Colin Perkins)
+* [Opening Remarks](https://github.com/intarchboard/workshop-aid/blob/main/slides/session4-process/aid-session4-intro.pdf) (Colin Perkins)
 * Summary and Provocation (Michael Welzl and Ignacio Castro)
 
 Relevant papers:
