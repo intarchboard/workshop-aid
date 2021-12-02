@@ -1,4 +1,4 @@
-# Report from the IAB Workshop on Analyzing IETF Data (AID), 2021
+# IAB Workshop on Analyzing IETF Data (AID), 2021
 
 This repo contains slides and the report for the IAB Workshop on Analyzing IETF Data (AID), 2021.
 
