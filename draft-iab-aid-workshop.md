@@ -14,14 +14,14 @@ pi: [sortrefs, symrefs]
 author:
   -
     ins: N. ten Oever
-    name: Niels fen Oever 
-    org: 
+    name: Niels fen Oever
+    org:
     email: mail@nielstenoever.net
 
   -
     ins: C. Cath
     name: Corinne Cath
-    org: 
+    org:
     email: corinnecath@gmail.com
 
   -
@@ -41,10 +41,14 @@ normative:
 
 
 informative:
-  
+
 
 --- abstract
 
+The Internet Architecture Board (IAB) held a workshop...
+
+Note that this document is a report on the proceedings of the workshop.
+The views and positions documented in this report are those of the workshop participants and do not necessarily reflect IAB views and positions.
 
 --- middle
 
