@@ -1,11 +1,8 @@
 # Report from the IAB Workshop on Analyzing IETF Data (AID), 2021
 
-This is the working area for the individual Internet-Draft, "Report from the IAB Workshop on Analyzing IETF Data (AID), 2021".
+This repo contains slides and the report for the IAB Workshop on Analyzing IETF Data (AID), 2021.
 
 * [Editor's Copy](https://intarchboard.github.io/workshop-aid/#go.draft-iab-aid-workshop.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-iab-aid-workshop)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-iab-aid-workshop)
-* [Compare Editor's Copy to Individual Draft](https://intarchboard.github.io/workshop-aid/#go.draft-iab-aid-workshop.diff)
 
 
 ## Contributing
