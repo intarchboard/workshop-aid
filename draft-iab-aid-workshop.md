@@ -69,7 +69,13 @@ There are a wide range of tools to analyze this data, produced by IETF participa
 
 ## Observations on affiliation and industry control
 
-Discussions about the analysis of 
+Discussions about the analysis of IETF data shows that affiliation is hard to narrow down. In part because affiliation is an open text field, which causes people to write their affiliation down in different ways (capitilization, space, word seperation, etc). 
+
+Furthermore there is the issue of mergers and acquisitions and subsidiary companies. There is no authorotative exogenous source of variation for affiliation changes so hand-collected and curated data is used to analyze changes in affiliation over time. Whereas this is imperfect, conclusions can be drawn from the data, such as that in case of a merger or acquisition where a small organizations joins a large organization, this results in a statistically significant  increase in liklihood of an individual being put in a working group chair position [BaronKanevskaia](https://www.iab.org/wp-content/IAB-uploads/2021/11/Baron.pdf)
+
+A common data format could contribute to analyses that compare SDO performance and behavior of actors inside and across standards bodies. To help this a draft data model has been developed during the workshop which can found under [Annex A].
+
+
 
 ## Community and diversity
 
@@ -136,6 +142,35 @@ Daniel Migault [CO2eq: Estimating Meetings’ Air Flight CO2 Equivalent Emission
 
 # Workshop participants {#participants}
 
+Bernhard Ganglmair
+Carsten Griwodz
+Christoph Becker
+Colin Perkins
+Corinne Cath
+Daniel Migault 
+Don Le
+Effy Xue Li
+Elizaveta Yachmeneva
+Francois Ortolan
+Greg Wood
+Ignacio Castro
+Jari Arkko
+Justus Baron 
+Karen O’Donoghue 
+Lars Eggert
+Mallory Knodel
+Marc Petit-Huguenin
+Mark McFadden
+Michael Welzl
+Mirja Kühlewind 
+Nick Doty
+Niels ten Oever
+Priyanka Sinha
+Safiqul Islam
+Sebastian Benthall
+Stephen McQuistin
+Wes Hardaker
+Zhenbin Li
 
 # Program Committee
 
@@ -146,4 +181,118 @@ The workshop Program Committee members were Niels ten Oever (chair, University o
 The Program Committee wishes to extend its thanks to Cindy Morgan for logistics support and to Kate Pundyk for notetaking.
 
 This workshop was made possible through funding from the Dutch Research Council (NWO) through grant MVI.19.032 as part of the programme ‘Maatschappelijk Verantwoord Innoveren (MVI)’.
+
+# Annexes
+
+## Annex 1 - Data Taxonomy
+
+A Draft Data Taxonomy for SDO Data:
+
+Organization:
+	Organization Subsidiary
+    		Time
+	Email domain
+	Website domain
+	Size 
+        	Revenue, annual
+        	Number of employees
+	Org - Affiliation Category (Labels) ; 1 : N
+        	Association
+        	Advertising Company
+        	Chipmaker
+		Content Distribution Network
+		Content Providers
+		Consulting
+		Cloud Provider
+		Cybersecurity
+		Financial Institution
+		Hardware vendor
+		Internet Registry
+		Infrastructure Company
+		Networking Equipment Vendor
+		Network Service Provider
+		Regional Standards Body
+		Regulatory Body
+	        Research and Development Institution
+		Software Provider
+	        Testing and Certification 
+		Telecommunications Provider 
+		Satellite Operator
+
+Org - Stakeholder Group : 1 - 1
+       Academia
+       Civil Society
+       Private Sector -- including industry consortia and associations; state-owned and government-funded businesses
+       Government
+       Technical Community (IETF, ICANN, ETSI, 3GPP, oneM2M, etc)
+       Intergovernmental organization 
+
+SDO:
+	Membership Types (SDO)
+	Members (Organizations for some, individuals for others…)
+	Membership organization
+		Regional SDO
+            		ARIB
+			ATIS
+			CCSA
+			ETSI
+			TSDSI
+			TTA
+			TTC
+		Consortia
+
+Country of Origin:
+	Country Code
+
+Number of Participants
+
+Patents
+	Organization
+	Authors - 1 : N - Persons/Participants
+	Time
+	Region
+	Patent Pool
+	Standard Essential Patent
+		If so, for which standard
+
+Participant (An individual person)
+	Name
+	1: N - Emails
+		Time start / time end
+
+	1 : N : Affiliation
+		Organization
+		Position
+	        Time start / end
+
+	1 : N : Affiliation - SDO
+		Position
+		SDO
+		Time
+
+	Email Domain (personal domain)
+
+	(Contribution data is in other tables)
+
+Document
+	Status of Document
+        	Internet Draft
+        	Work Item
+		Standard
+	Author - 
+		Name
+        	Affiliation - Organization
+		Person/Participant
+    		(Affiliation from Authors only?)
+
+Data Source - Provenance for any data imported from an external data set
+
+Meeting
+	Time
+	Place
+	Agenda
+	Registrations
+		Name
+		Email
+		Affiliation
 
