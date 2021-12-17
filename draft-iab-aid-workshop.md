@@ -45,7 +45,7 @@ informative:
 
 --- abstract
 
-The 'Show me the numbers: Workshop on Analyzing IETF Data (AID)' was convened by the Internet Architecture Board (IAB) and the IN-SIGHT.it project at the University of Amsterdam in November and December 2020. This report summarized the workshop's significant points of discussion and identifies topics that may warrant future work and consideration.
+The 'Show me the numbers: Workshop on Analyzing IETF Data (AID)' was convened by the Internet Architecture Board (IAB) and the IN-SIGHT.it project at the University of Amsterdam in November and December 2020. This report summarizes the workshop's discussion and identifies topics that warrant future work and consideration.
 
 Note that this document is a report on the proceedings of the workshop. The views and positions documented in this report are those of the workshop participants and do not necessarily reflect IAB views and positions.
 
@@ -55,9 +55,11 @@ Note that this document is a report on the proceedings of the workshop. The view
 
 The Internet Architecture Board (IAB) regularly organizes workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture.  This long-term planning function of the IAB is complementary to the ongoing engineering efforts performed by working groups of the Internet Engineering Task Force (IETF).
 
-The IETF as an international Standards Developing Organization hosts diverse data on the history, development, and current activities in the development and standardization of Internet protocols and its institutions. A large portion of this data is publicly available, yet this data is arguably underutilized as a tool to inform the work in the IETF and research on topics like Internet governance and trends in ICT standard-setting.
+The IETF, as an international Standards Developing Organization (SDO), hosts a diverse set of data including on the organization’s history, development, and current standardization activities, including of Internet protocols and its institutions. A large portion of this data is publicly available, yet it is underutilized as a tool to inform the work in the IETF proper or the broader research community focused on topics like Internet governance and trends in ICT standard-setting.
 
-The aim of this workshop was to analyze how IETF data currently is used, what insights can be drawn from that, and what questions that are worth pursuing remain unanswered. These questions could inform a research agenda for IETF data for collaborative work among interested parties, ranging from academia and civil society to industry and IETF leadership. 
+The aim of this 2021 workshop was to analyze how IETF data currently is used, what insights can be drawn from that data, and what further knowledge puzzles does interrogating this data raise for future inquiry.
+
+These questions can inform a research agenda drawing from IETF data, that fosters further collaborative work among interested parties, ranging from academia and civil society to industry and IETF leadership. 
 
 # Workshop Scope and Discussion
 
@@ -69,15 +71,20 @@ There are a wide range of tools to analyze this data, produced by IETF participa
 
 ## Observations on affiliation and industry control
 
-Discussions about the analysis of IETF data shows that affiliation is hard to narrow down. In part because affiliation is an open text field, which causes people to write their affiliation down in different ways (capitilization, space, word seperation, etc). 
+Discussions about the analysis of IETF data shows that affiliation dynamics are hard to capture, due to the specifics of how the data is entered but also because of larger social dynamics. 
 
-Furthermore there is the issue of mergers and acquisitions and subsidiary companies. There is no authorotative exogenous source of variation for affiliation changes so hand-collected and curated data is used to analyze changes in affiliation over time. Whereas this is imperfect, conclusions can be drawn from the data, such as that in case of a merger or acquisition where a small organizations joins a large organization, this results in a statistically significant  increase in liklihood of an individual being put in a working group chair position [BaronKanevskaia](https://www.iab.org/wp-content/IAB-uploads/2021/11/Baron.pdf)
+On the side of IETF data capture, affiliation is an open text field, which causes people to write their affiliation down in different ways (capitilization, space, word seperation, etc). A common data format could contribute to analyses that compare SDO performance and behavior of actors inside and across standards bodies. To help this a draft data model has been developed during the workshop which can found under [Annex A].
 
-A common data format could contribute to analyses that compare SDO performance and behavior of actors inside and across standards bodies. To help this a draft data model has been developed during the workshop which can found under [Annex A].
-
+Furthermore, there is the issue of mergers and acquisitions and subsidiary companies. There is no authorotative exogenous source of variation for affiliation changes, so hand-collected and curated data is used to analyze changes in affiliation over time. While this approach is imperfect, conclusions can be drawn from the data. For example, in the case of mergers or acquisition where a small organizations joins a large organization, this results in a statistically significant increase in liklihood of an individual being put in a working group chair position [BaronKanevskaia](https://www.iab.org/wp-content/IAB-uploads/2021/11/Baron.pdf)
 
 
 ## Community and diversity
+
+The discussion on community and diversity spanned from methods that draw from novel text mining, time series clustering, graph mining and psycholinguistic approaches to understand the consensus mechanism to more speculative approaches about what it would take to build a feminist Internet. The discussion also covered the data needed to measure who is in the community and how diverse it is. 
+
+The discussion highlighted that part of the challenge is defining what diversity means, how to measure it, or as one participant highlighted to define “who the average IETF is”. The question was also raised what to do about missing data or non-participating or underrepresented communities, like women, individuals from the African continent and network operators. In terms of how IETF data is structured, various researchers mentioned that it is hard track conversations as mail threads, split, merge and change. The ICANN-at-large model came up as an example of how to involve relevant stakeholders in the IETF that are currently not present. Vice versa, it is also interesting for outside communities (especially policy makers) to get a sense of who the IETF community is and keep them updated. 
+
+The human element of the community and diversity was stressed, in order to understand its diversity it is important to talk to people (beyond text analysis) and to ensure diversity individual participants must make an effort to, as one participant recounted, tell them their participation is valuable. 
 
 ## Publications, process, and decision-making
 
