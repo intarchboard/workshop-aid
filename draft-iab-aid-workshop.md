@@ -69,6 +69,9 @@ The IETF holds a wide range of data sources. The main ones used are the [mailing
 
 There are a wide range of tools to analyze this data, produced by IETF participants or researchers interestested in the work of the IETF. Two projects that presented their work at the workshop were [BigBang](https://bigbang-py.readthedocs.io/en/latest/) and Sodestream's [IETFdata](https://github.com/lumisota/ietfdata) library. These projects could be used to add additional insights to the existing [IETF statistics](https://www.arkko.com/tools/docstats.html) page and the [datatracker statistics](https://datatracker.ietf.org/stats/)
 
+The datatracker itself is a community tool that welcomes contributions, e.g. for additions to the existing interfaces or the statistics page directly (see [https://notes.ietf.org/iab-aid-datatracker-database-overview](https://notes.ietf.org/iab-aid-datatracker-database-overview). Instructions how to set up aa local development environment can be found at [https://notes.ietf.org/iab-aid-data-resources](https://notes.ietf.org/iab-aid-data-resources). Questions or any discussion can be issued to tools-discuss@ietf.org.
+
+
 ## Observations on affiliation and industry control
 
 Discussions about the analysis of IETF data shows that affiliation dynamics are hard to capture, due to the specifics of how the data is entered but also because of larger social dynamics. 
