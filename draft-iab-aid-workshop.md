@@ -65,9 +65,9 @@ These questions can inform a research agenda drawing from IETF data, that foster
 
 ## Tools, data, and methods
 
-The IETF holds a wide range of data sources. The main ones used are the [mailinglist archives](), [RFCs](), and [the datatracker](). The latter provides information on participants, authors, meeting proceedings, minutes [and more](). Furthermore there are [statistics for the IETF websites](), working group Github repositories, IETF [survey data](). 
+The IETF holds a wide range of data sources. The main ones used are the [mailinglist archives](), [RFCs](), and [the datatracker](). The latter provides information on participants, authors, meeting proceedings, minutes [and more](). Furthermore there are [statistics for the IETF websites](), working group Github repositories, IETF [survey data]() and there was discussion about the utility of download statistics for the RFCs itself from different repos.
 
-There are a wide range of tools to analyze this data, produced by IETF participants or researchers interestested in the work of the IETF. Two projects that presented their work at the workshop were [BigBang](https://bigbang-py.readthedocs.io/en/latest/) and Sodestream's [IETFdata](https://github.com/lumisota/ietfdata) library. These projects could be used to add additional insights to the existing [IETF statistics](https://www.arkko.com/tools/docstats.html) page and the [datatracker statistics](https://datatracker.ietf.org/stats/)
+There are a wide range of tools to analyze this data, produced by IETF participants or researchers interestested in the work of the IETF. Two projects that presented their work at the workshop were [BigBang](https://bigbang-py.readthedocs.io/en/latest/) and Sodestream's [IETFdata](https://github.com/lumisota/ietfdata) library; the RFC Prolog Database was described in a submittd paper (see Section {{positionpapers}} below). These projects could be used to add additional insights to the existing [IETF statistics](https://www.arkko.com/tools/docstats.html) page and the [datatracker statistics](https://datatracker.ietf.org/stats/), e.g. related to gender questions, however, privacy issues andd implication of making such data publicly available were discussed as well.
 
 ## Observations on affiliation and industry control
 
