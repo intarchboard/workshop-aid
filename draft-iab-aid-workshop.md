@@ -80,11 +80,13 @@ Furthermore, there is the issue of mergers and acquisitions and subsidiary compa
 
 ## Community and diversity
 
+High interest from the workshop participants was also on using existing data to better understand who the current IETF community is, especially in terms of diversity, and how to potentially increase diversity and thereby inclusivity, e.g. understanding if are there certain groups or lists that "drive people away" and why. Inclusivity and transparency about the standardization process are generally important to keep the Internet and its development process viable. As commented during the workshop discussion, when measuring and evaluating different angles of diversity it is also important to understand the actual goals that are intended when increasing diversity, e.g. in order to increase competence (mainly technical diversity from different companies and stakeholder groups) or relevance (also regional diversity and international footprint).
+
 The discussion on community and diversity spanned from methods that draw from novel text mining, time series clustering, graph mining and psycholinguistic approaches to understand the consensus mechanism to more speculative approaches about what it would take to build a feminist Internet. The discussion also covered the data needed to measure who is in the community and how diverse it is. 
 
 The discussion highlighted that part of the challenge is defining what diversity means, how to measure it, or as one participant highlighted to define “who the average IETF is”. The question was also raised what to do about missing data or non-participating or underrepresented communities, like women, individuals from the African continent and network operators. In terms of how IETF data is structured, various researchers mentioned that it is hard track conversations as mail threads, split, merge and change. The ICANN-at-large model came up as an example of how to involve relevant stakeholders in the IETF that are currently not present. Vice versa, it is also interesting for outside communities (especially policy makers) to get a sense of who the IETF community is and keep them updated. 
 
-The human element of the community and diversity was stressed, in order to understand its diversity it is important to talk to people (beyond text analysis) and to ensure diversity individual participants must make an effort to, as one participant recounted, tell them their participation is valuable. 
+The human element of the community and diversity was stressed, in order to understand the IETF community's diversity it is important to talk to people (beyond text analysis) and in order to ensure inclusivity individual participants must make an effort to, as one participant recounted, tell them their participation is valuable. 
 
 ## Publications, process, and decision-making
 
