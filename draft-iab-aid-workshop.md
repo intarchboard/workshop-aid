@@ -45,7 +45,7 @@ informative:
 
 --- abstract
 
-The 'Show me the numbers: Workshop on Analyzing IETF Data (AID)' was convened by the Internet Architecture Board (IAB) on November 29 to December 2 and hosted by the IN-SIGHT.it project at the University of Amsterdam, however, converted to an online only event. The workshop was conducted based on two discussion parts and a hackathon activity in between. This report summarizes the workshop's discussion and identifies topics that warrant future work and consideration.
+The 'Show me the numbers: Workshop on Analyzing IETF Data (AID)' was convened by the Internet Architecture Board (IAB) from November 29 to December 2 and hosted by the IN-SIGHT.it project at the University of Amsterdam, however, converted to an online only event. The workshop was conducted based on two discussion parts and a hackathon activity in between. This report summarizes the workshop's discussion and identifies topics that warrant future work and consideration.
 
 Note that this document is a report on the proceedings of the workshop. The views and positions documented in this report are those of the workshop participants and do not necessarily reflect IAB views and positions.
 
