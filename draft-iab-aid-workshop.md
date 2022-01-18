@@ -100,6 +100,10 @@ The human element of the community and diversity was stressed, in order to under
 
 # Hackathon Report
 
+The middle two days of the workshop were organized as a hackathon. The aims of the hackathon were to 1) acquaint people with the different data sources and analysis methods, 2) seek to answer some of the questions that came up during presentations on the first day of the workshop, 3) foster collaboration among researchers to grow a community of IETF data researchers.
+
+At the end of Day 1, the plenary presentation day, people were invited to divide themselves in groups who selected their own respective facilitators. All groups had their own work space and could use their own communication methods and channels, or use IETF's gather.town. Furthermore, daily check-ins were organized during the two hackathon days. At the final day the hackathon groups presented their work in a plenary session. 
+
 # Position Papers {#positionpapers}
 
 ## Tools, data, and methods
