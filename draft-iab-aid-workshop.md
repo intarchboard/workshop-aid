@@ -104,6 +104,10 @@ The middle two days of the workshop were organized as a hackathon. The aims of t
 
 At the end of Day 1, the plenary presentation day, people were invited to divide themselves in groups who selected their own respective facilitators. All groups had their own work space and could use their own communication methods and channels, or use IETF's gather.town. Furthermore, daily check-ins were organized during the two hackathon days. At the final day the hackathon groups presented their work in a plenary session. 
 
+The objectives of the hackathon, according to the co-chairs, have been met, and the output significantly exceeded expectations. It allowed for more interaction then academic conferences and produced some actual research results by people who had not collaborated before the workshop. 
+
+Future workshops that choose to integrate a hackathon could consider to ask participants to submit groups, issues, and questions beforehand (potentially as part of the positions paper or the sign-up process) to facilitate the formation of groups.  
+
 # Position Papers {#positionpapers}
 
 ## Tools, data, and methods
