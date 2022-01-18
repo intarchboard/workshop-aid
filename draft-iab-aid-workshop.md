@@ -45,7 +45,7 @@ informative:
 
 --- abstract
 
-The 'Show me the numbers: Workshop on Analyzing IETF Data (AID)' was convened by the Internet Architecture Board (IAB) and the IN-SIGHT.it project at the University of Amsterdam in November and December 2020. This report summarizes the workshop's discussion and identifies topics that warrant future work and consideration.
+The 'Show me the numbers: Workshop on Analyzing IETF Data (AID)' was convened by the Internet Architecture Board (IAB) from November 29 to December 2 and hosted by the IN-SIGHT.it project at the University of Amsterdam, however, converted to an online only event. The workshop was conducted based on two discussion parts and a hackathon activity in between. This report summarizes the workshop's discussion and identifies topics that warrant future work and consideration.
 
 Note that this document is a report on the proceedings of the workshop. The views and positions documented in this report are those of the workshop participants and do not necessarily reflect IAB views and positions.
 
@@ -53,15 +53,15 @@ Note that this document is a report on the proceedings of the workshop. The view
 
 # Introduction
 
-The Internet Architecture Board (IAB) regularly organizes workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture.  This long-term planning function of the IAB is complementary to the ongoing engineering efforts performed by working groups of the Internet Engineering Task Force (IETF).
-
 The IETF, as an international Standards Developing Organization (SDO), hosts a diverse set of data including on the organization’s history, development, and current standardization activities, including of Internet protocols and its institutions. A large portion of this data is publicly available, yet it is underutilized as a tool to inform the work in the IETF proper or the broader research community focused on topics like Internet governance and trends in ICT standard-setting.
 
-The aim of this 2021 workshop was to analyze how IETF data currently is used, what insights can be drawn from that data, and what further knowledge puzzles does interrogating this data raise for future inquiry.
+The aim of Analyzing IETF Data (AID) 2021 IAB workshop was to analyze how IETF data currently is used, what insights can be drawn from that data, and what further knowledge puzzles does interrogating this data raise for future inquiry.
 
 These questions can inform a research agenda drawing from IETF data, that fosters further collaborative work among interested parties, ranging from academia and civil society to industry and IETF leadership. 
 
 # Workshop Scope and Discussion
+
+The workshop was organized with two all-group discussion slots at the beginning and the end of the workshop. In between the workshop participants organized hacakthon activities, based on topics identifed during the initial discussion and submitted position papers. The follow topic areas have been identified and discussed.
 
 ## Tools, data, and methods
 
@@ -70,6 +70,9 @@ The IETF holds a wide range of data sources. The main ones used are the [mailing
 There are a wide range of tools to analyze this data, produced by IETF participants or researchers interestested in the work of the IETF. Two projects that presented their work at the workshop were [BigBang](https://bigbang-py.readthedocs.io/en/latest/) and Sodestream's [IETFdata](https://github.com/lumisota/ietfdata) library; the RFC Prolog Database was described in a submitted paper (see Section {{positionpapers}} below). These projects could be used to add additional insights to the existing [IETF statistics](https://www.arkko.com/tools/docstats.html) page and the [datatracker statistics](https://datatracker.ietf.org/stats/), e.g. related to gender questions, however, privacy issues andd implication of making such data publicly available were discussed as well.
 
 The datatracker itself is a community tool that welcomes contributions, e.g. for additions to the existing interfaces or the statistics page directly (see [https://notes.ietf.org/iab-aid-datatracker-database-overview](https://notes.ietf.org/iab-aid-datatracker-database-overview). Instructions how to set up aa local development environment can be found, at the time of the workshop, at [https://notes.ietf.org/iab-aid-data-resources](https://notes.ietf.org/iab-aid-data-resources). Questions or any discussion can be issued to tools-discuss@ietf.org.
+
+
+There are a wide range of tools to analyze this data, produced by IETF participants or researchers interestested in the work of the IETF. Two projects that presented their work at the workshop were [BigBang](https://bigbang-py.readthedocs.io/en/latest/) and Sodestream's [IETFdata](https://github.com/lumisota/ietfdata) library. These projects could be used to add additional insights to the existing page from Jari Arkko on [IETF statistics](https://www.arkko.com/tools/docstats.html) and statistic pages of the the [datatracker](https://datatracker.ietf.org/stats/)
 
 
 ## Observations on affiliation and industry control
@@ -94,6 +97,8 @@ The human element of the community and diversity was stressed, in order to under
 ## Publications, process, and decision-making
 
 ## Environmental Sustainability
+
+# Hackathon Report
 
 # Position Papers {#positionpapers}
 
