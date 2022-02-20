@@ -232,39 +232,39 @@ Daniel Migault [CO2eq: Estimating Meetings’ Air Flight CO2 Equivalent Emission
 
 # Workshop participants {#participants}
 
-Bernhard Ganglmair
-Carsten Griwodz
-Christoph Becker
-Colin Perkins
-Corinne Cath
-Daniel Migault
-Don Le
-Effy Xue Li
-Elizaveta Yachmeneva
-Francois Ortolan
-Greg Wood
-Ignacio Castro
-Jari Arkko
-Justus Baron
-Karen O’Donoghue
-Lars Eggert
-Mallory Knodel
-Marc Petit-Huguenin
-Mark McFadden
-Michael Welzl
-Mirja Kühlewind
-Nick Doty
-Niels ten Oever
-Priyanka Sinha
-Safiqul Islam
-Sebastian Benthall
-Stephen McQuistin
-Wes Hardaker
-Zhenbin Li
+Bernhard Ganglmair,
+Carsten Griwodz,
+Christoph Becker,
+Colin Perkins,
+Corinne Cath,
+Daniel Migault,
+Don Le,
+Effy Xue Li,
+Elizaveta Yachmeneva,
+Francois Ortolan,
+Greg Wood,
+Ignacio Castro,
+Jari Arkko,
+Justus Baron,
+Karen O’Donoghue,
+Lars Eggert,
+Mallory Knodel,
+Marc Petit-Huguenin,
+Mark McFadden,
+Michael Welzl,
+Mirja Kühlewind,
+Nick Doty,
+Niels ten Oever,
+Priyanka Sinha,
+Safiqul Islam,
+Sebastian Benthall,
+Stephen McQuistin,
+Wes Hardaker, and
+Zhenbin Li.
 
 # Program Committee
 
-The workshop Program Committee members were Niels ten Oever (chair, University of Amsterdam), Colin Perkins (chair, IRTF, University of Glasgow), Corinne Cath (chair, Oxford Internet Institute), Mirja Kühlewind (IAB, Ericsson), Zhenbin Li (IAB, Huawei), Wes Hardaker (IAB, USC/ISI).
+The workshop Program Committee members were Niels ten Oever (chair, University of Amsterdam), Colin Perkins (chair, IRTF, University of Glasgow), Corinne Cath (chair, Oxford Internet Institute), Mirja Kühlewind (IAB, Ericsson), Zhenbin Li (IAB, Huawei), and Wes Hardaker (IAB, USC/ISI).
 
 # Acknowledgments
 
