@@ -14,7 +14,7 @@ pi: [sortrefs, symrefs]
 author:
   -
     ins: N. ten Oever
-    name: Niels fen Oever
+    name: Niels ten Oever
     org: University of Amsterdam
     email: mail@nielstenoever.net
 
@@ -273,6 +273,9 @@ The Program Committee wishes to extend its thanks to Cindy Morgan for logistics 
 This workshop was made possible through funding from the Dutch Research Council (NWO) through grant MVI.19.032 as part of the programme ‘Maatschappelijk Verantwoord Innoveren (MVI)’.
 
 We would like to thank the Ford Foundation for their support that made participation of Corinne Cath, Kate Pundyk, and Mallory Knodel possible [grant number, 136179, 2020).
+
+This work is supported in part by the UK Engineering and Physical Sciences
+Research Council under grant EP/S036075/1.
 
 # Annexes
 
