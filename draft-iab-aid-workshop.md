@@ -55,7 +55,7 @@ Note that this document is a report on the proceedings of the workshop. The view
 
 The IETF, as an international Standards Developing Organization (SDO), hosts a diverse set of data including on the organization’s history, development, and current standardization activities, including of Internet protocols and its institutions. A large portion of this data is publicly available, yet it is underutilized as a tool to inform the work in the IETF proper or the broader research community focused on topics like Internet governance and trends in ICT standard-setting.
 
-The aim of Analyzing IETF Data (AID) 2021 IAB workshop was to analyze how IETF data currently is used, what insights can be drawn from that data, and what further knowledge puzzles does interrogating this data raise for future inquiry.
+The aim of the IAB Workshop on Analyzing IETF Data (AID) 2021 was to study how IETF data is currently used, understand what insights can be drawn from that data, and to explore open questions around how that data may be further used in future.
 
 These questions can inform a research agenda drawing from IETF data, that fosters further collaborative work among interested parties, ranging from academia and civil society to industry and IETF leadership. 
 
@@ -67,12 +67,11 @@ The workshop was organized with two all-group discussion slots at the beginning 
 
 The IETF holds a wide range of data sources. The main ones used are the [mailinglist archives](), [RFCs](), and [the datatracker](). The latter provides information on participants, authors, meeting proceedings, minutes [and more](). Furthermore there are [statistics for the IETF websites](), working group Github repositories, IETF [survey data]() and there was discussion about the utility of download statistics for the RFCs itself from different repos.
 
-There are a wide range of tools to analyze this data, produced by IETF participants or researchers interestested in the work of the IETF. Two projects that presented their work at the workshop were [BigBang](https://bigbang-py.readthedocs.io/en/latest/) and Sodestream's [IETFdata](https://github.com/lumisota/ietfdata) library; the RFC Prolog Database was described in a submitted paper (see Section {{positionpapers}} below). These projects could be used to add additional insights to the existing [IETF statistics](https://www.arkko.com/tools/docstats.html) page and the [datatracker statistics](https://datatracker.ietf.org/stats/), e.g. related to gender questions, however, privacy issues andd implication of making such data publicly available were discussed as well.
+There are a wide range of tools to analyze this data, produced by IETF participants or researchers interestested in the work of the IETF. Two projects that presented their work at the workshop were [BigBang](https://bigbang-py.readthedocs.io/en/latest/) and Sodestream's [IETFdata](https://github.com/glasgow-ipl/ietfdata) library; the RFC Prolog Database was described in a submitted paper (see Section {{positionpapers}} below). These projects could be used to add additional insights to the existing [IETF statistics](https://www.arkko.com/tools/docstats.html) page and the [datatracker statistics](https://datatracker.ietf.org/stats/), e.g., related to gender questions, however, privacy issues andd implication of making such data publicly available were discussed as well.
 
 The datatracker itself is a community tool that welcomes contributions, e.g. for additions to the existing interfaces or the statistics page directly (see [https://notes.ietf.org/iab-aid-datatracker-database-overview](https://notes.ietf.org/iab-aid-datatracker-database-overview). Instructions how to set up aa local development environment can be found, at the time of the workshop, at [https://notes.ietf.org/iab-aid-data-resources](https://notes.ietf.org/iab-aid-data-resources). Questions or any discussion can be issued to tools-discuss@ietf.org.
 
 
-There are a wide range of tools to analyze this data, produced by IETF participants or researchers interestested in the work of the IETF. Two projects that presented their work at the workshop were [BigBang](https://bigbang-py.readthedocs.io/en/latest/) and Sodestream's [IETFdata](https://github.com/lumisota/ietfdata) library. These projects could be used to add additional insights to the existing page from Jari Arkko on [IETF statistics](https://www.arkko.com/tools/docstats.html) and statistic pages of the the [datatracker](https://datatracker.ietf.org/stats/)
 
 
 ## Observations on affiliation and industry control
