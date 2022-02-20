@@ -137,6 +137,32 @@ data such as surveys, etc.
 
 ## Environmental Sustainability
 
+The final discussion session considered environmental sustainability. It
+discussed what is the IETF’s role with respect to climate change both in
+terms on what is the environmental impact of the way the IETF develops
+standards, and in terms of what is the environmental impact of the
+standards the IETF develops?
+
+Discussion started by considering how sustainable are IETF meetings, 
+focussing on how much CO2 emissions are IETF meetings responsible for
+and how can we make the IETF more sustainable. Analysis looked at the
+home locations of participants, meeting locations, and carbon footprint
+of air travel and remote attendance, to estimate the carbon costs of an
+IETF meeting. Initial results suggest that the costs of holding multiple
+in-person IETF meetings per year are likely unsustainable, although the
+analysis is ongoing.
+
+Discussion also considered to what extent are climate impacts considered in
+the development and standardization of Internet protocols? It reviewed the
+text of RFCs and active working group drafts, looking for relevant keywords
+to highlight the extent to which climate change, energy efficiency, and 
+related topics are considered in the design of Internet protocols, to show
+the limited extent to which these topics have been considered. Ongoing work
+is considering meeting minutes and mail archives, to get a fuller picture,
+but initial results show only limited consideration of these important
+issues.
+
+
 # Hackathon Report
 
 The middle two days of the workshop were organized as a hackathon. The aims of the hackathon were to 1) acquaint people with the different data sources and analysis methods, 2) seek to answer some of the questions that came up during presentations on the first day of the workshop, 3) foster collaboration among researchers to grow a community of IETF data researchers.
