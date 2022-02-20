@@ -31,7 +31,7 @@ author:
     email: mirja.kuehlewind@ericsson.com
 
   -
-    ins: C. Perkins
+    ins: C. S. Perkins
     name: Colin Perkins
     org: University of Glasgow
     email: csp@csperkins.org
