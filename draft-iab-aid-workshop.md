@@ -129,7 +129,7 @@ Finally, there were questions around what can be learn about protocols by
 studying IETF publications, processes, and decision making? For example,
 are there insights to be gained around how security concerns are discussed
 and considered in the development of standards? Is it possible to verify
-correctness of protocols and/or detect ambiguities? Extract implementations? 
+correctness of protocols and/or detect ambiguities? Extract implementations?
 
 Answers to these questions come from analysis of IETF emails, RFCs and
 Internet-Drafts, meeting minutes, recordings, Github data, and external
@@ -143,7 +143,7 @@ terms on what is the environmental impact of the way the IETF develops
 standards, and in terms of what is the environmental impact of the
 standards the IETF develops?
 
-Discussion started by considering how sustainable are IETF meetings, 
+Discussion started by considering how sustainable are IETF meetings,
 focussing on how much CO2 emissions are IETF meetings responsible for
 and how can we make the IETF more sustainable. Analysis looked at the
 home locations of participants, meeting locations, and carbon footprint
@@ -155,7 +155,7 @@ analysis is ongoing.
 Discussion also considered to what extent are climate impacts considered in
 the development and standardization of Internet protocols? It reviewed the
 text of RFCs and active working group drafts, looking for relevant keywords
-to highlight the extent to which climate change, energy efficiency, and 
+to highlight the extent to which climate change, energy efficiency, and
 related topics are considered in the design of Internet protocols, to show
 the limited extent to which these topics have been considered. Ongoing work
 is considering meeting minutes and mail archives, to get a fuller picture,
@@ -292,9 +292,9 @@ Organization:
           Revenue, annual
           Number of employees
   Org - Affiliation Category (Labels) ; 1 : N
-          Association
-          Advertising Company
-          Chipmaker
+    Association
+    Advertising Company
+    Chipmaker
     Content Distribution Network
     Content Providers
     Consulting
@@ -308,26 +308,26 @@ Organization:
     Network Service Provider
     Regional Standards Body
     Regulatory Body
-          Research and Development Institution
+    Research and Development Institution
     Software Provider
-          Testing and Certification
+    Testing and Certification
     Telecommunications Provider
     Satellite Operator
 
 Org - Stakeholder Group : 1 - 1
-       Academia
-       Civil Society
-       Private Sector -- including industry consortia and associations; state-owned and government-funded businesses
-       Government
-       Technical Community (IETF, ICANN, ETSI, 3GPP, oneM2M, etc)
-       Intergovernmental organization
+    Academia
+    Civil Society
+    Private Sector -- including industry consortia and associations; state-owned and government-funded businesses
+    Government
+    Technical Community (IETF, ICANN, ETSI, 3GPP, oneM2M, etc)
+    Intergovernmental organization
 
 SDO:
   Membership Types (SDO)
   Members (Organizations for some, individuals for others…)
   Membership organization
     Regional SDO
-                ARIB
+      ARIB
       ATIS
       CCSA
       ETSI
