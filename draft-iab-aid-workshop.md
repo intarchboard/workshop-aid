@@ -281,113 +281,114 @@ Research Council under grant EP/S036075/1.
 
 ## Annex 1 - Data Taxonomy
 
+~~~~
 A Draft Data Taxonomy for SDO Data:
 
-Organization:
-  Organization Subsidiary
-    Time
-  Email domain
-  Website domain
-  Size
-          Revenue, annual
-          Number of employees
-  Org - Affiliation Category (Labels) ; 1 : N
-    Association
-    Advertising Company
-    Chipmaker
-    Content Distribution Network
-    Content Providers
-    Consulting
-    Cloud Provider
-    Cybersecurity
-    Financial Institution
-    Hardware vendor
-    Internet Registry
-    Infrastructure Company
-    Networking Equipment Vendor
-    Network Service Provider
-    Regional Standards Body
-    Regulatory Body
-    Research and Development Institution
-    Software Provider
-    Testing and Certification
-    Telecommunications Provider
-    Satellite Operator
+Organization:  
+  Organization Subsidiary  
+  Time  
+  Email domain  
+  Website domain  
+  Size  
+          Revenue, annual  
+          Number of employees  
+  Org - Affiliation Category (Labels) ; 1 : N  
+    Association  
+    Advertising Company  
+    Chipmaker  
+    Content Distribution Network  
+    Content Providers  
+    Consulting  
+    Cloud Provider  
+    Cybersecurity  
+    Financial Institution  
+    Hardware vendor  
+    Internet Registry  
+    Infrastructure Company  
+    Networking Equipment Vendor  
+    Network Service Provider  
+    Regional Standards Body  
+    Regulatory Body  
+    Research and Development Institution  
+    Software Provider  
+    Testing and Certification  
+    Telecommunications Provider  
+    Satellite Operator  
 
-Org - Stakeholder Group : 1 - 1
-    Academia
-    Civil Society
-    Private Sector -- including industry consortia and associations; state-owned and government-funded businesses
-    Government
-    Technical Community (IETF, ICANN, ETSI, 3GPP, oneM2M, etc)
-    Intergovernmental organization
+Org - Stakeholder Group : 1 - 1  
+    Academia  
+    Civil Society  
+    Private Sector -- including industry consortia and associations; state-owned and government-funded businesses  
+    Government  
+    Technical Community (IETF, ICANN, ETSI, 3GPP, oneM2M, etc)  
+    Intergovernmental organization  
 
 SDO:
-  Membership Types (SDO)
-  Members (Organizations for some, individuals for others…)
-  Membership organization
-    Regional SDO
-      ARIB
-      ATIS
-      CCSA
-      ETSI
-      TSDSI
-      TTA
-      TTC
-    Consortia
+  Membership Types (SDO)  
+  Members (Organizations for some, individuals for others…)  
+  Membership organization  
+    Regional SDO  
+      ARIB  
+      ATIS  
+      CCSA  
+      ETSI  
+      TSDSI  
+      TTA  
+      TTC  
+    Consortia  
 
 Country of Origin:
-  Country Code
+  Country Code  
 
 Number of Participants
 
 Patents
-  Organization
-  Authors - 1 : N - Persons/Participants
-  Time
-  Region
-  Patent Pool
-  Standard Essential Patent
-    If so, for which standard
+  Organization  
+  Authors - 1 : N - Persons/Participants  
+  Time  
+  Region  
+  Patent Pool  
+  Standard Essential Patent  
+    If so, for which standard  
 
-Participant (An individual person)
-  Name
-  1: N - Emails
-    Time start / time end
+Participant (An individual person)  
+  Name  
+  1: N - Emails  
+    Time start / time end  
 
-  1 : N : Affiliation
-    Organization
-    Position
-          Time start / end
+  1 : N : Affiliation  
+    Organization  
+    Position  
+          Time start / end  
 
-  1 : N : Affiliation - SDO
-    Position
-    SDO
-    Time
+  1 : N : Affiliation - SDO  
+    Position  
+    SDO  
+    Time  
 
-  Email Domain (personal domain)
+  Email Domain (personal domain)  
 
-  (Contribution data is in other tables)
+  (Contribution data is in other tables)  
 
-Document
-  Status of Document
-          Internet Draft
-          Work Item
-    Standard
-  Author -
-    Name
-          Affiliation - Organization
-    Person/Participant
-        (Affiliation from Authors only?)
+Document  
+  Status of Document  
+          Internet Draft  
+          Work Item  
+    Standard  
+  Author -  
+    Name  
+          Affiliation - Organization  
+    Person/Participant  
+        (Affiliation from Authors only?)  
 
-Data Source - Provenance for any data imported from an external data set
+Data Source - Provenance for any data imported from an external data set  
 
-Meeting
-  Time
-  Place
-  Agenda
-  Registrations
-    Name
-    Email
-    Affiliation
-
+Meeting  
+  Time  
+  Place  
+  Agenda  
+  Registrations  
+    Name  
+    Email  
+    Affiliation  
+~~~~
