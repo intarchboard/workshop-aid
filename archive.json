@@ -1,0 +1,448 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2022-02-22T00:38:51.799953+00:00",
+  "repo": "intarchboard/workshop-aid",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 4,
+      "id": "I_kwDOGZ70DM4_ns2p",
+      "title": "Update session5-sustainability",
+      "url": "https://github.com/intarchboard/workshop-aid/issues/4",
+      "state": "CLOSED",
+      "author": "Christovis",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Include hyper-link to Daniel Migault position paper in README.md: https://www.iab.org/wp-content/IAB-uploads/2021/11/Migault.pdf",
+      "createdAt": "2021-11-30T15:29:41Z",
+      "updatedAt": "2021-12-01T09:25:47Z",
+      "closedAt": "2021-12-01T09:25:47Z",
+      "comments": []
+    },
+    {
+      "number": 5,
+      "id": "I_kwDOGZ70DM4_3iOG",
+      "title": "condensedX/YIndexToIndex functions should work based on integer math",
+      "url": "https://github.com/intarchboard/workshop-aid/issues/5",
+      "state": "CLOSED",
+      "author": "jariarkko",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [
+        "enhancement"
+      ],
+      "body": "... which would speed things up",
+      "createdAt": "2021-12-05T18:13:51Z",
+      "updatedAt": "2021-12-05T18:15:02Z",
+      "closedAt": "2021-12-05T18:14:53Z",
+      "comments": [
+        {
+          "author": "jariarkko",
+          "authorAssociation": "COLLABORATOR",
+          "body": "These functions are in ProcessForms class.",
+          "createdAt": "2021-12-05T18:14:06Z",
+          "updatedAt": "2021-12-05T18:14:06Z"
+        },
+        {
+          "author": "jariarkko",
+          "authorAssociation": "COLLABORATOR",
+          "body": "sorry. wrong repo...",
+          "createdAt": "2021-12-05T18:15:02Z",
+          "updatedAt": "2021-12-05T18:15:02Z"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "id": "I_kwDOGZ70DM5BIBtJ",
+      "title": "Section on hackathon",
+      "url": "https://github.com/intarchboard/workshop-aid/issues/7",
+      "state": "CLOSED",
+      "author": "mirjak",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "I added a new (empty) section for an hackathon report in my PR. I think it would be nice to also report a bit on how this was organised and our experience for potential future workshops.",
+      "createdAt": "2022-01-03T15:56:28Z",
+      "updatedAt": "2022-01-19T14:27:50Z",
+      "closedAt": "2022-01-19T14:27:50Z",
+      "comments": [
+        {
+          "author": "nllz",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Done!",
+          "createdAt": "2022-01-19T14:27:50Z",
+          "updatedAt": "2022-01-19T14:27:50Z"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "id": "I_kwDOGZ70DM5BICJ7",
+      "title": "Section with questions?",
+      "url": "https://github.com/intarchboard/workshop-aid/issues/8",
+      "state": "OPEN",
+      "author": "mirjak",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Should we add the questions from my slides (https://github.com/intarchboard/workshop-aid/blob/main/slides/Taking-stock.pdf) to the report? Either as separate section or as subsections to the existing sections?",
+      "createdAt": "2022-01-03T15:59:05Z",
+      "updatedAt": "2022-01-19T14:28:10Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "nllz",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Not sure, but if you want I would not be against it !",
+          "createdAt": "2022-01-19T14:28:09Z",
+          "updatedAt": "2022-01-19T14:28:09Z"
+        }
+      ]
+    }
+  ],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOGZ70DM4vHZ7l",
+      "title": "My 5 min slides",
+      "url": "https://github.com/intarchboard/workshop-aid/pull/1",
+      "state": "MERGED",
+      "author": "larseggert",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-11-29T09:22:38Z",
+      "updatedAt": "2021-11-29T14:39:22Z",
+      "baseRepository": "intarchboard/workshop-aid",
+      "baseRefName": "main",
+      "baseRefOid": "fbdfb629615a6ae973b2ed6ab6fcf34c5b7fb953",
+      "headRepository": "intarchboard/workshop-aid",
+      "headRefName": "larseggert-patch-1",
+      "headRefOid": "40a453d50dc94e5214abaf907302301cbe45f137",
+      "closedAt": "2021-11-29T10:35:32Z",
+      "mergedAt": "2021-11-29T10:35:32Z",
+      "mergedBy": "nllz",
+      "mergeCommit": {
+        "oid": "c8a7935b536f543d01c6f75cf6f677a0965ce3c6"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOGZ70DM4vHrn9",
+      "title": "Mallory's slides for diversity session",
+      "url": "https://github.com/intarchboard/workshop-aid/pull/2",
+      "state": "MERGED",
+      "author": "mallory",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-11-29T10:43:15Z",
+      "updatedAt": "2021-11-29T10:44:14Z",
+      "baseRepository": "intarchboard/workshop-aid",
+      "baseRefName": "main",
+      "baseRefOid": "c8a7935b536f543d01c6f75cf6f677a0965ce3c6",
+      "headRepository": "mallory/workshop-aid",
+      "headRefName": "main",
+      "headRefOid": "9119d94afb0e8069b7297e5531d608d6aa34cfad",
+      "closedAt": "2021-11-29T10:44:14Z",
+      "mergedAt": "2021-11-29T10:44:14Z",
+      "mergedBy": "nllz",
+      "mergeCommit": {
+        "oid": "16442a13bc01f77c069223d2acee31d80d3c2004"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOGZ70DM4vIJ1I",
+      "title": "adding slides from Benthall presentation",
+      "url": "https://github.com/intarchboard/workshop-aid/pull/3",
+      "state": "MERGED",
+      "author": "sbenthall",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Slides for session 1 , Benthall presentation on BigBang and complexity",
+      "createdAt": "2021-11-29T13:14:36Z",
+      "updatedAt": "2021-11-29T13:17:10Z",
+      "baseRepository": "intarchboard/workshop-aid",
+      "baseRefName": "main",
+      "baseRefOid": "78a075777822feefe5a529b13131315f4d8f2950",
+      "headRepository": "sbenthall/workshop-aid",
+      "headRefName": "main",
+      "headRefOid": "db0535a0fc00cd35836d871c2c344c7fbc682bcc",
+      "closedAt": "2021-11-29T13:17:10Z",
+      "mergedAt": "2021-11-29T13:17:10Z",
+      "mergedBy": "nllz",
+      "mergeCommit": {
+        "oid": "c5fd56b2b7445b82d28f1a836b28f35496d8bb49"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 6,
+      "id": "PR_kwDOGZ70DM4weRKv",
+      "title": "Some organisational notes to add",
+      "url": "https://github.com/intarchboard/workshop-aid/pull/6",
+      "state": "MERGED",
+      "author": "mirjak",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-01-03T15:55:06Z",
+      "updatedAt": "2022-01-18T15:45:23Z",
+      "baseRepository": "intarchboard/workshop-aid",
+      "baseRefName": "main",
+      "baseRefOid": "9b3c060d89d157a4d37890a0747628ff3c768eb4",
+      "headRepository": "intarchboard/workshop-aid",
+      "headRefName": "mirjak-patch-1",
+      "headRefOid": "98be8a529e08c7101af909c9c45ca5de966e7c49",
+      "closedAt": "2022-01-18T15:45:19Z",
+      "mergedAt": "2022-01-18T15:45:19Z",
+      "mergedBy": "nllz",
+      "mergeCommit": {
+        "oid": "7ae4ba50599dda4a47e1572a7a680330bcbaed6a"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 9,
+      "id": "PR_kwDOGZ70DM4weS_8",
+      "title": "Some proposed edits on the tools section",
+      "url": "https://github.com/intarchboard/workshop-aid/pull/9",
+      "state": "MERGED",
+      "author": "mirjak",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-01-03T16:06:49Z",
+      "updatedAt": "2022-01-17T15:55:16Z",
+      "baseRepository": "intarchboard/workshop-aid",
+      "baseRefName": "main",
+      "baseRefOid": "ca5b7f047c4c9143e4ed8d766f512c9522b09009",
+      "headRepository": "intarchboard/workshop-aid",
+      "headRefName": "mirjak-patch-2",
+      "headRefOid": "1ca853bf6eff2780a524863aeec06ab0ffd19bbe",
+      "closedAt": "2022-01-17T15:55:13Z",
+      "mergedAt": "2022-01-17T15:55:13Z",
+      "mergedBy": "nllz",
+      "mergeCommit": {
+        "oid": "9b3c060d89d157a4d37890a0747628ff3c768eb4"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 10,
+      "id": "PR_kwDOGZ70DM4weUaK",
+      "title": "Adding more links with infos about the datatracker",
+      "url": "https://github.com/intarchboard/workshop-aid/pull/10",
+      "state": "MERGED",
+      "author": "mirjak",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "Maybe we need to confirm with Robert Sparks that we can have these links in an RFC or if we want to move to a more stable link (if possible).",
+      "createdAt": "2022-01-03T16:15:20Z",
+      "updatedAt": "2022-01-17T15:53:21Z",
+      "baseRepository": "intarchboard/workshop-aid",
+      "baseRefName": "main",
+      "baseRefOid": "ca5b7f047c4c9143e4ed8d766f512c9522b09009",
+      "headRepository": "intarchboard/workshop-aid",
+      "headRefName": "mirjak-patch-3",
+      "headRefOid": "0d5b810505c2043454bfba4cfd78515ff0041d81",
+      "closedAt": "2022-01-17T15:53:16Z",
+      "mergedAt": "2022-01-17T15:53:16Z",
+      "mergedBy": "nllz",
+      "mergeCommit": {
+        "oid": "f94af817de6b4517d68887564ef8ce48b4fc128d"
+      },
+      "comments": [
+        {
+          "author": "rjsparks",
+          "authorAssociation": "NONE",
+          "body": "How about having the RFC point to something like a general information page about workshops (which may have to be created) at the IAB website. That page can then always resolve to _something_ but the content can be dynamic.\r\n\r\nIn the long run, the information about the datatracker captured in the notes pointed to here can be put in a more permanent location/format, but that's not going to be in place in the timeframe that this report should be released by.",
+          "createdAt": "2022-01-03T16:27:30Z",
+          "updatedAt": "2022-01-03T16:27:30Z"
+        },
+        {
+          "author": "rjsparks",
+          "authorAssociation": "NONE",
+          "body": "(Can't resist - sorry) Alternatively, we can accept that its OK to have some links in RFCs that are expected to become stale or go away over time, and mark them as such, but that would be a bigger policy change for the series.",
+          "createdAt": "2022-01-03T16:29:29Z",
+          "updatedAt": "2022-01-03T16:29:29Z"
+        },
+        {
+          "author": "mirjak",
+          "authorAssociation": "MEMBER",
+          "body": "On the general issue: This is a weblink and not an explicit reference, so I'm actually not sure what the policy on stability is...\r\n\r\nHowever, I think the easiest solution would be to move this content to a more permanent link, ideally somewhere \"in\" the datatracker as I assume this information is also useful to non-workshop participants. Or is there already a datatracker GitHub where we could add this information and then only link to the overall GitHub repo?\r\n\r\n",
+          "createdAt": "2022-01-03T17:31:25Z",
+          "updatedAt": "2022-01-03T17:31:25Z"
+        },
+        {
+          "author": "rjsparks",
+          "authorAssociation": "NONE",
+          "body": "We're still working towards moving the datatracker into github - right now it's in trac/svn which would be a horrible place for this to land. Hopefully we'll get the move to github finished in a small number of weeks.\r\n\r\nAfter thinking longer, I suggest just pointing to notes (as the PR does) and maybe adding a qualifier that says \"at the time of the workshop ...\"",
+          "createdAt": "2022-01-03T18:15:56Z",
+          "updatedAt": "2022-01-03T18:15:56Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 11,
+      "id": "PR_kwDOGZ70DM4wkB0E",
+      "title": "Some intro text to affiliation/industry section",
+      "url": "https://github.com/intarchboard/workshop-aid/pull/11",
+      "state": "MERGED",
+      "author": "mirjak",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-01-05T14:21:19Z",
+      "updatedAt": "2022-01-17T15:50:40Z",
+      "baseRepository": "intarchboard/workshop-aid",
+      "baseRefName": "main",
+      "baseRefOid": "ca5b7f047c4c9143e4ed8d766f512c9522b09009",
+      "headRepository": "intarchboard/workshop-aid",
+      "headRefName": "mirjak-patch-4",
+      "headRefOid": "d391902545c1332a7abe324b44170670dff097f8",
+      "closedAt": "2022-01-17T15:50:32Z",
+      "mergedAt": "2022-01-17T15:50:30Z",
+      "mergedBy": "nllz",
+      "mergeCommit": {
+        "oid": "48d0ea7ad57df56d9950be2cc2805132c92a4dbe"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 12,
+      "id": "PR_kwDOGZ70DM4wkGIv",
+      "title": "intro text for diversity section",
+      "url": "https://github.com/intarchboard/workshop-aid/pull/12",
+      "state": "MERGED",
+      "author": "mirjak",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2022-01-05T14:42:51Z",
+      "updatedAt": "2022-01-17T11:46:53Z",
+      "baseRepository": "intarchboard/workshop-aid",
+      "baseRefName": "main",
+      "baseRefOid": "ca5b7f047c4c9143e4ed8d766f512c9522b09009",
+      "headRepository": "intarchboard/workshop-aid",
+      "headRefName": "mirjak-patch-5",
+      "headRefOid": "85b7f6363d4c35fb6497ec531296425e97b9cf66",
+      "closedAt": "2022-01-17T11:46:50Z",
+      "mergedAt": "2022-01-17T11:46:50Z",
+      "mergedBy": "nllz",
+      "mergeCommit": {
+        "oid": "db4a53026cff39bc684f181b11d612379ada25bf"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 13,
+      "id": "PR_kwDOGZ70DM4zMkkV",
+      "title": "Merge changes",
+      "url": "https://github.com/intarchboard/workshop-aid/pull/13",
+      "state": "MERGED",
+      "author": "csperkins",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Merge changes relating to Publications, process, and decision-making, Environmental Sustainability, and other minor cleanups and fixes.",
+      "createdAt": "2022-02-20T23:25:46Z",
+      "updatedAt": "2022-02-21T12:07:15Z",
+      "baseRepository": "intarchboard/workshop-aid",
+      "baseRefName": "main",
+      "baseRefOid": "a0104819ebaa8eb2069137358839a495cf208af5",
+      "headRepository": "intarchboard/workshop-aid",
+      "headRefName": "csperkins-branch1",
+      "headRefOid": "1a595019daab13c4a359bf4e1bb0f61f0ed824d6",
+      "closedAt": "2022-02-21T12:07:10Z",
+      "mergedAt": "2022-02-21T12:07:10Z",
+      "mergedBy": "nllz",
+      "mergeCommit": {
+        "oid": "ecb9fb918a52d47301c1bcf95164acb11264f60c"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOGZ70DM409Ywh",
+          "commit": {
+            "abbreviatedOid": "1a59501"
+          },
+          "author": "mirjak",
+          "authorAssociation": "MEMBER",
+          "state": "APPROVED",
+          "body": "Thanks Colin! For me this would be ready for -00 submission with this PR.",
+          "createdAt": "2022-02-21T10:47:41Z",
+          "updatedAt": "2022-02-21T10:47:41Z",
+          "comments": []
+        }
+      ]
+    }
+  ]
+}
