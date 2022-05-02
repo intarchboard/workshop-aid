@@ -186,8 +186,8 @@ Table of Contents
    example, in the case of mergers or acquisition where a small
    organizations joins a large organization, this results in a
    statistically significant increase in liklihood of an individual
-   being put in a working group chair position BaronKanevskaia
-   (https://www.iab.org/wp-content/IAB-uploads/2021/11/Baron.pdf)
+   being put in a working group chair position (see BaronKanevskaia
+   (https://www.iab.org/wp-content/IAB-uploads/2021/11/Baron.pdf)).
 
 2.3.  Community and diversity
 
