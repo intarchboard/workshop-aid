@@ -97,20 +97,20 @@ The human element of the community and diversity was stressed, in order to under
 
 A number of submissions focussed on the RFC publication process, on the
 development of standards and other RFCs in the IETF, and on how the IETF
-make decisions.
+makes decisions.
 This included work on both technical decisions about the content of the
 standards, but also procedural and process decisions, and questions around
 how we can understand, model, and perhaps improve the standards process.
 Some of the work considered what makes a successful RFC, how are RFCs
-used and referenced, and about what can we learn by studying the RFCs,
-drafts, and email discussion.
+used and referenced, and what we can learn about importance of a topic
+by studying the RFCs, drafts, and email discussion.
 
 There were three sets of questions to consider in this area. The first
 related to success and failure of standards, and considered what makes
 a successful/good RFC? What makes the process of RFC making successful?
 And how are RFCs used and referenced once published?
 Discussion considered how to better understand the path from an internet
-draft to an RFC, to see if there are specific factors lead to successful
+draft to an RFC, to see if there are specific factors that lead to successful
 development of a draft into an RFC. Participants explored the extent to
 which this depends on the seniority and experience of the authors, on the
 topic and IETF area, extent and scope of mailing list discussion, and other
@@ -129,7 +129,9 @@ Finally, there were questions around what can be learn about protocols by
 studying IETF publications, processes, and decision making? For example,
 are there insights to be gained around how security concerns are discussed
 and considered in the development of standards? Is it possible to verify
-correctness of protocols and/or detect ambiguities? Extract implementations?
+correctness of protocols and/or detect ambiguities? What can be learnt
+by extracting insights from implementations and activities on implementation
+efforts?
 
 Answers to these questions come from analysis of IETF emails, RFCs and
 Internet-Drafts, meeting minutes, recordings, Github data, and external
@@ -149,8 +151,8 @@ and how can we make the IETF more sustainable. Analysis looked at the
 home locations of participants, meeting locations, and carbon footprint
 of air travel and remote attendance, to estimate the carbon costs of an
 IETF meeting. Initial results suggest that the costs of holding multiple
-in-person IETF meetings per year are likely unsustainable, although the
-analysis is ongoing.
+in-person IETF meetings per year are likely unsustainable in terms of carbon
+emission, although the analysis is ongoing.
 
 Discussion also considered to what extent are climate impacts considered in
 the development and standardization of Internet protocols? It reviewed the
