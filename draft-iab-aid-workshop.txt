@@ -5,12 +5,12 @@
 Network Working Group                                       N. ten Oever
 Internet-Draft                                   University of Amsterdam
 Intended status: Informational                                   C. Cath
-Expires: 26 August 2022                                                 
+Expires: 3 November 2022                                                
                                                             M. Kühlewind
                                                                 Ericsson
                                                            C. S. Perkins
                                                    University of Glasgow
-                                                        22 February 2022
+                                                              2 May 2022
 
 
     Report from the IAB Workshop on Analyzing IETF Data (AID), 2021
@@ -53,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 26 August 2022.
+   This Internet-Draft will expire on 3 November 2022.
 
 Copyright Notice
 
@@ -148,7 +148,7 @@ Table of Contents
    contributions, e.g. for additions to the existing interfaces or the
    statistics page directly (see https://notes.ietf.org/iab-aid-
    datatracker-database-overview (https://notes.ietf.org/iab-aid-
-   datatracker-database-overview).  Instructions how to set up aa local
+   datatracker-database-overview)).  Instructions how to set up a local
    development environment can be found, at the time of the workshop, at
    https://notes.ietf.org/iab-aid-data-resources
    (https://notes.ietf.org/iab-aid-data-resources).  Questions or any
