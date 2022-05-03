@@ -5,12 +5,12 @@
 Network Working Group                                       N. ten Oever
 Internet-Draft                                   University of Amsterdam
 Intended status: Informational                                   C. Cath
-Expires: 3 November 2022                                                
+Expires: 4 November 2022                                                
                                                             M. Kühlewind
                                                                 Ericsson
                                                            C. S. Perkins
                                                    University of Glasgow
-                                                              2 May 2022
+                                                              3 May 2022
 
 
     Report from the IAB Workshop on Analyzing IETF Data (AID), 2021
@@ -53,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 November 2022.
+   This Internet-Draft will expire on 4 November 2022.
 
 Copyright Notice
 
@@ -124,12 +124,16 @@ Table of Contents
 2.1.  Tools, data, and methods
 
    The IETF holds a wide range of data sources.  The main ones used are
-   the mailinglist archives, RFCs, and the datatracker.  The latter
-   provides information on participants, authors, meeting proceedings,
-   minutes and more.  Furthermore there are statistics for the IETF
-   websites, working group Github repositories, IETF survey data and
-   there was discussion about the utility of download statistics for the
-   RFCs itself from different repos.
+   the mailinglist archives (https://mailarchive.ietf.org/arch/), RFCs
+   (https://www.ietf.org/standards/rfcs/), and the datatracker
+   (https://datatracker.ietf.org/).  The latter provides information on
+   participants, authors, meeting proceedings, minutes and more
+   (https://notes.ietf.org/iab-aid-datatracker-database-overview#).
+   Furthermore there are statistics for the IETF websites
+   (https://www.ietf.org/policies/web-analytics/), working group Github
+   repositories, IETF survey data (https://www.ietf.org/blog/ietf-
+   community-survey-2021/) and there was discussion about the utility of
+   download statistics for the RFCs itself from different repos.
 
    There are a wide range of tools to analyze this data, produced by
    IETF participants or researchers interestested in the work of the
