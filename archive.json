@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-02-22T00:38:51.799953+00:00",
+  "timestamp": "2022-05-03T00:57:28.402563+00:00",
   "repo": "intarchboard/workshop-aid",
   "labels": [
     {
@@ -128,15 +128,15 @@
       "id": "I_kwDOGZ70DM5BICJ7",
       "title": "Section with questions?",
       "url": "https://github.com/intarchboard/workshop-aid/issues/8",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "mirjak",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "Should we add the questions from my slides (https://github.com/intarchboard/workshop-aid/blob/main/slides/Taking-stock.pdf) to the report? Either as separate section or as subsections to the existing sections?",
       "createdAt": "2022-01-03T15:59:05Z",
-      "updatedAt": "2022-01-19T14:28:10Z",
-      "closedAt": null,
+      "updatedAt": "2022-05-02T17:44:24Z",
+      "closedAt": "2022-05-02T17:44:24Z",
       "comments": [
         {
           "author": "nllz",
@@ -443,6 +443,34 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 14,
+      "id": "PR_kwDOGZ70DM43Lf6K",
+      "title": "Proposed update in support wording",
+      "url": "https://github.com/intarchboard/workshop-aid/pull/14",
+      "state": "MERGED",
+      "author": "mirjak",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "The previous wording sounded like the workshop was co-organized by these project/institutes which was not the case. This was an IAB workshop and I think we never really have sponsors (except for the physical host venue if applicable). Would the proposed wording work instead? Or @nllz maybe make a different proposal!",
+      "createdAt": "2022-05-02T17:07:40Z",
+      "updatedAt": "2022-05-02T17:44:11Z",
+      "baseRepository": "intarchboard/workshop-aid",
+      "baseRefName": "main",
+      "baseRefOid": "277ec902ea22bff06a50fdaf82f7400d76c828d1",
+      "headRepository": "intarchboard/workshop-aid",
+      "headRefName": "mirjak-patch-1",
+      "headRefOid": "29e0af40fdef19401584ff444f9ee742957002fb",
+      "closedAt": "2022-05-02T17:44:11Z",
+      "mergedAt": "2022-05-02T17:44:11Z",
+      "mergedBy": "nllz",
+      "mergeCommit": {
+        "oid": "d17790ad6ed9497498d00611c331ce41742e052c"
+      },
+      "comments": [],
+      "reviews": []
     }
   ]
 }
