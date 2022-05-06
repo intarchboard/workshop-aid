@@ -276,7 +276,7 @@ Efforts put in this workshop by Niels ten Oever was made possible through fundin
 
 We would like to thank the Ford Foundation for their support that made participation of Corinne Cath, Kate Pundyk, and Mallory Knodel possible (grant number, 136179, 2020).
 
-Efforts in the organization of this workshop by Niels ten Oever is supported in part by the UK Engineering and Physical Sciences Research Council under grant EP/S036075/1.
+Efforts in the organization of this workshop by Niels ten Oever were supported in part by the UK Engineering and Physical Sciences Research Council under grant EP/S036075/1.
 
 # Annexes
 
