@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en" class="Internet-Draft">
+<head>
+<meta charset="utf-8">
+<meta content="Common,Latin" name="scripts">
+<meta content="initial-scale=1.0" name="viewport">
+<title>Report from the IAB Workshop on Analyzing IETF Data (AID), 2021</title>
+<meta content="Niels ten Oever" name="author">
+<meta content="Corinne Cath" name="author">
+<meta content="Mirja Kühlewind" name="author">
+<meta content="Colin Perkins" name="author">
+<meta content="
+       The 'Show me the numbers: Workshop on Analyzing IETF Data (AID)' was convened by the Internet Architecture Board (IAB) from November 29 to December 2 and hosted by the IN-SIGHT.it project at the University of Amsterdam, however, converted to an online only event. The workshop was conducted based on two discussion parts and a hackathon activity in between. This report summarizes the workshop's discussion and identifies topics that warrant future work and consideration. 
+       Note that this document is a report on the proceedings of the workshop. The views and positions documented in this report are those of the workshop participants and do not necessarily reflect IAB views and positions. 
+    " name="description">
+<meta content="xml2rfc 3.12.7" name="generator">
+<meta content="Internet-Draft" name="keyword">
+<meta content="draft-iab-aid-workshop-latest" name="ietf.draft">
+<!-- Generator version information:
+  xml2rfc 3.12.7
+    Python 3.9.7
+    appdirs 1.4.4
+    ConfigArgParse 1.3
+    google-i18n-address 2.5.1
+    html5lib 1.1
+    intervaltree 3.1.0
+    Jinja2 2.11.3
+    kitchen 1.2.6
+    lxml 4.6.5
+    MarkupSafe 2.0.1
+    pycountry 20.7.3
+    pyflakes 2.3.1
+    PyYAML 5.4.1
+    requests 2.26.0
+    setuptools 52.0.0
+    six 1.16.0
+-->
+<link href="draft-iab-aid-workshop.xml" rel="alternate" type="application/rfc+xml">
+<link href="#copyright" rel="license">
+<style type="text/css">@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Italic'), local('Lora-Italic'), url('https://martinthomson.github.io/rfc-css/fonts/lora-italic-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Italic'), local('Lora-Italic'), url('https://martinthomson.github.io/rfc-css/fonts/lora-italic-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Italic'), local('Lora-Italic'), url('https://martinthomson.github.io/rfc-css/fonts/lora-italic-vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Italic'), local('Lora-Italic'), url('https://martinthomson.github.io/rfc-css/fonts/lora-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Italic'), local('Lora-Italic'), url('https://martinthomson.github.io/rfc-css/fonts/lora-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url('https://martinthomson.github.io/rfc-css/fonts/lora-regular-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url('https://martinthomson.github.io/rfc-css/fonts/lora-regular-cyrillic.woff2') format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url('https://martinthomson.github.io/rfc-css/fonts/lora-regular-vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url('https://martinthomson.github.io/rfc-css/fonts/lora-regular-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url('https://martinthomson.github.io/rfc-css/fonts/lora-regular-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lora Bold'), local('Lora-Bold'), url('https://martinthomson.github.io/rfc-css/fonts/lora-bold-cyrillic-ext.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lora Bold'), local('Lora-Bold'), url('https://martinthomson.github.io/rfc-css/fonts/lora-bold-cyrillic.woff2') format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lora Bold'), local('Lora-Bold'), url('https://martinthomson.github.io/rfc-css/fonts/lora-bold-vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lora Bold'), local('Lora-Bold'), url('https://martinthomson.github.io/rfc-css/fonts/lora-bold-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lora Bold'), local('Lora-Bold'), url('https://martinthomson.github.io/rfc-css/fonts/lora-bold-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Cabin Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Cabin Condensed SemiBold'), local('CabinCondensed-SemiBold'), url('https://martinthomson.github.io/rfc-css/fonts/cabincondensed-semibold-vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Cabin Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Cabin Condensed SemiBold'), local('CabinCondensed-SemiBold'), url('https://martinthomson.github.io/rfc-css/fonts/cabincondensed-semibold-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Cabin Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Cabin Condensed SemiBold'), local('CabinCondensed-SemiBold'), url('https://martinthomson.github.io/rfc-css/fonts/cabincondensed-semibold-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Oxygen Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Oxygen Mono'), local('OxygenMono-Regular'), url('https://martinthomson.github.io/rfc-css/fonts/oxygenmono-regular-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Oxygen Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Oxygen Mono'), local('OxygenMono-Regular'), url('https://martinthomson.github.io/rfc-css/fonts/oxygenmono-regular-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  color-scheme: light dark;
+  --background-color: #fff;
+  --text-color: #222;
+  --title-color: #191919;
+  --link-color: #2a6496;
+  --highlight-color: #f9f9f9;
+  --line-color: #eee;
+  --pilcrow-weak: #ddd;
+  --pilcrow-strong: #bbb;
+  --small-font-size: 14.5px;
+  --font-mono: 'Oxygen Mono', monospace;
+  scrollbar-color: #bbb #eee;
+}
+body {
+  max-width: 600px;
+  margin: 75px auto;
+  padding: 0 5px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font: 16px/22px "Lora", serif;
+  scroll-behavior: smooth;
+}
+
+.ears {
+  display: none;
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cabin Condensed", sans-serif;
+  font-weight: 600;
+  margin: 0.8em 0 0.3em;
+  font-size-adjust: 0.5;
+  color: var(--title-color);
+}
+h1#title {
+  font-size: 32px;
+  line-height: 40px;
+  clear: both;
+}
+h1#title, h1#rfcnum {
+  margin: 1.5em 0 0.2em;
+}
+h1#rfcnum + h1#title {
+  margin: 0.2em 0;
+}
+
+h1, h2, h3 {
+  font-size: 22px;
+  line-height: 27px;
+}
+h4, h5, h6 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* general structure */
+.author {
+  padding-bottom: 0.3em;
+}
+#abstract+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+#abstract+p code, #abstract+p samp, #abstract+p tt {
+  font-size: 16px;
+  line-height: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0.5em 0;
+  text-align: left;
+}
+div {
+  margin: 0;
+}
+.alignRight.art-text {
+  background-color: var(--highlight-color);
+  border: 1px solid var(--line-color);
+  border-radius: 3px;
+  padding: 0.5em 1em 0;
+  margin-bottom: 0.5em;
+}
+.alignRight.art-text pre {
+  padding: 0;
+  width: auto;
+}
+.alignRight {
+  margin: 1em 0;
+}
+.alignRight > *:first-child {
+  border: none;
+  margin: 0;
+  float: right;
+  clear: both;
+}
+.alignRight > *:nth-child(2) {
+  clear: both;
+  display: block;
+  border: none;
+}
+svg {
+  display: block;
+}
+/* font-family isn't space-separated, but =~ will have to do */
+svg[font-family~="monospace" i], svg [font-family~="monospace" i] {
+  font-family: var(--font-mono);
+}
+.alignCenter.art-text {
+  background-color: var(--highlight-color);
+  border: 1px solid var(--line-color);
+  border-radius: 3px;
+  padding: 0.5em 1em 0;
+  margin-bottom: 0.5em;
+}
+.alignCenter.art-text pre {
+  padding: 0;
+  width: auto;
+}
+.alignCenter {
+  margin: 1em 0;
+}
+.alignCenter > *:first-child {
+  border: none;
+  /* this isn't optimal, but it's an existence proof.  PrinceXML doesn't
+     support flexbox yet.
+  */
+  display: table;
+  margin: 0 auto;
+}
+
+/* lists */
+ol, ul {
+  padding: 0;
+  margin: 0 0 0.5em 2em;
+}
+ol ol, ul ul, ol ul, ul ol {
+  margin-left: 1em;
+}
+li {
+  margin: 0 0 0.25em 0;
+}
+.ulCompact li {
+  margin: 0;
+}
+ul.empty, .ulEmpty {
+  list-style-type: none;
+}
+ul.empty li, .ulEmpty li {
+  margin-top: 0.5em;
+}
+ul.compact, .ulCompact,
+ol.compact, .olCompact {
+  line-height: 100%;
+  margin: 0 0 0 2em;
+}
+
+/* definition lists */
+dl {
+}
+dl > dt {
+  float: left;
+  margin-right: 1em;
+}
+dl > dd {
+  margin-bottom: .8em;
+  min-height: 1.3em;
+}
+dl.compact > dd, .dlCompact > dd {
+  margin-bottom: 0em;
+}
+dl > dd > dl {
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+}
+dd.break {
+  display: none;
+}
+
+/* links */
+a, a[href].selfRef:hover {
+  text-decoration: none;
+}
+a[href].selfRef {
+  color: var(--text-color);
+}
+a[href] {
+  color: var(--link-color);
+}
+a[href]:hover {
+  text-decoration: underline;
+}
+a[href].selfRef:hover {
+  background-color: var(--highlight-color);
+}
+a.xref {
+  white-space: nowrap;
+}
+
+/* Figures */
+tt, code, pre {
+  background-color: var(--highlight-color);
+  font: 14px/22px var(--font-mono);
+}
+tt, code {
+  /* changing the font for inline elements leads to different ascender
+     and descender heights; as we want to retain baseline alignment,
+     remove leading to avoid altering the final height of lines */
+  line-height: 0;
+}
+pre {
+  border: 1px solid var(--line-color);
+  font-size: 13.5px;
+  line-height: 16px;
+  letter-spacing: -0.2px;
+  margin: 5px;
+  padding: 5px;
+}
+img {
+  max-width: 100%;
+}
+figure {
+  margin: 0.5em 0;
+  padding: 0;
+}
+figure blockquote {
+  margin: 0.8em 0.4em 0.4em;
+}
+figcaption, caption {
+  font-style: italic;
+  margin: 0.5em 1.5em;
+  text-align: left;
+}
+@media screen {
+  pre, svg {
+    display: inline-block;
+    overflow-x: auto;
+  }
+  pre {
+    max-width: 100%;
+    width: calc(100% - 22px - 1em);
+  }
+  svg {
+    max-width: calc(100% - 22px - 1em);
+  }
+  figure pre {
+    display: block;
+    width: calc(100% - 25px);
+  }
+  pre + .pilcrow, svg + .pilcrow {
+    display: inline-block;
+    vertical-align: text-bottom;
+    padding-bottom: 8px;
+  }
+}
+
+/* aside, blockquote */
+aside, blockquote {
+  margin-left: 0;
+  padding: 0 2em;
+  font-style: italic;
+}
+blockquote {
+  margin: 1em 0;
+}
+cite {
+  display: block;
+  text-align: right;
+  font-style: italic;
+}
+
+/* tables */
+table {
+  max-width: 100%;
+  margin: 0 0 1em;
+  border-collapse: collapse;
+}
+table.right {
+  margin-left: auto;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+table.left {
+  margin-right: auto;
+}
+thead, tbody {
+  border: 1px solid var(--line-color);
+}
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 5px 10px;
+}
+th {
+  background-color: var(--line-color);
+}
+tr:nth-child(2n) > td {
+  background-color: var(--background-color);
+}
+tr:nth-child(2n+1) > td {
+  background-color: var(--highlight-color);
+}
+thead+tbody > tr:nth-child(2n) > td {
+  background-color: var(--highlight-color);
+}
+thead+tbody > tr:nth-child(2n+1) > td {
+  background-color: var(--background-color);
+}
+table caption {
+  margin: 0;
+  padding: 3px 0 3px 1em;
+}
+table p {
+  margin: 0;
+}
+
+/* pilcrow */
+a.pilcrow {
+  margin-left: 3px;
+  opacity: 0.2;
+  user-select: none;
+}
+a.pilcrow[href] { color: var(--pilcrow-weak); }
+a.pilcrow[href]:hover { text-decoration: none; }
+@media not print {
+  :hover > a.pilcrow {
+    opacity: 1;
+  }
+  a.pilcrow[href]:hover {
+    color: var(--pilcrow-strong);
+    background-color: transparent;
+  }
+}
+@media print {
+  a.pilcrow {
+    display: none;
+  }
+}
+
+/* misc */
+hr {
+  border: 0;
+  border-top: 1px solid var(--line-color);
+}
+.bcp14 {
+  font-variant: small-caps;
+}
+
+.role {
+  font-variant: all-small-caps;
+}
+
+/* info block */
+#identifiers {
+  margin: 0;
+  font-size: var(--small-font-size);
+  line-height: 18px;
+  --identifier-width: 8em;
+}
+#identifiers dt {
+  width: var(--identifier-width);
+  margin: 0;
+  clear: left;
+  float: left;
+  text-align: right;
+}
+#identifiers dd {
+  margin: 0 0 0 calc(1em + var(--identifier-width));
+  min-width: 5em;
+}
+#identifiers .authors .author {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+#identifiers .authors .org {
+  font-style: italic;
+}
+
+/* The prepared/rendered info at the very bottom of the page */
+.docInfo {
+  color: #999;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 2em;
+}
+.docInfo .prepared {
+  float: left;
+}
+.docInfo .prepared {
+  float: right;
+}
+
+/* table of contents */
+#toc {
+  padding: 0.75em 0 2em 0;
+  margin-bottom: 1em;
+}
+#toc nav ul {
+  margin: 0 0.5em 0 0;
+  padding: 0;
+  list-style: none;
+}
+#toc nav li {
+  line-height: 1.3em;
+  margin: 0.75em 0;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+}
+#toc a.xref {
+  white-space: normal;
+}
+/* references */
+.references dt {
+  text-align: right;
+  font-weight: bold;
+  min-width: 7em;
+}
+.references dd {
+  margin-left: 8em;
+  overflow: auto;
+}
+
+.refInstance {
+  margin-bottom: 1.25em;
+}
+
+.references .ascii {
+  margin-bottom: 0.25em;
+}
+
+/* index */
+#rfc\.index\.index + ul {
+  margin-left: 0;
+}
+
+/* authors */
+address.vcard {
+  font-style: normal;
+  margin: 1em 0;
+}
+address.vcard .nameRole {
+  font-weight: 700;
+  margin-left: 0;
+}
+address.vcard .label {
+  margin: 0.5em 0;
+}
+address.vcard .type {
+  display: none;
+}
+.alternative-contact {
+  margin: 1.5em 0 1em;
+}
+hr.addr {
+  border-top: 1px dashed;
+  margin: 0;
+  color: #ddd;
+  max-width: calc(100% - 16px);
+}
+@media (min-width: 500px) {
+  #authors-addresses > section {
+    column-count: 2;
+    column-gap: 20px;
+  }
+  #authors-addresses > section > h2 {
+    column-span: all;
+  }
+  /* hack for break-inside: avoid-column */
+  #authors-addresses address {
+    display: inline-block;
+    break-inside: avoid-column;
+  }
+}
+
+.rfcEditorRemove p:first-of-type {
+  font-style: italic;
+}
+.cref {
+  background-color: rgba(249, 232, 105, 0.3);
+  padding: 2px 4px;
+}
+.crefSource {
+  font-style: italic;
+}
+/* alternative layout for smaller screens */
+@media screen and (max-width: 929px) {
+  #toc {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    opacity: 0.6;
+  }
+  #toc.active {
+      opacity: 1;
+  }
+  #toc h2 {
+    margin: 0;
+    padding: 2px 0 2px 6px;
+    padding-right: 1em;
+    font-size: 18px;
+    line-height: 24px;
+    min-width: 190px;
+    text-align: right;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+  }
+  #toc h2::before { /* css hamburger */
+    float: right;
+    position: relative;
+    width: 1em;
+    height: 1px;
+    left: -164px;
+    margin: 8px 0 0 0;
+    background: white none repeat scroll 0 0;
+    box-shadow: 0 4px 0 0 white, 0 8px 0 0 white;
+    content: "";
+  }
+  #toc nav {
+    display: none;
+    background-color: var(--background-color);
+    padding: 0.5em 1em 1em;
+    overflow: auto;
+    overscroll-behavior: contain;
+    height: calc(100vh - 48px);
+    border-left: 1px solid #ddd;
+  }
+  #toc.active nav {
+    display: block;
+  }
+  /* Make the collapsed ToC header render white on gray also when it's a link */
+  #toc h2 a,
+  #toc h2 a:link,
+  #toc h2 a:focus,
+  #toc h2 a:hover,
+  #toc a.toplink,
+  #toc a.toplink:hover {
+    color: white;
+    background-color: #444;
+    text-decoration: none;
+  }
+  #toc a.toplink {
+    margin-top: 2px;
+  }
+}
+
+/* alternative layout for wide screens */
+@media screen and (min-width: 930px) {
+  body {
+    padding-right: 360px;
+    padding-right: calc(min(180px + 20%, 500px));
+  }
+  #toc {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    right: calc(50vw - 480px);
+    width: 312px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  #toc h2 {
+    margin: 0;
+    padding: 0.25em 1em 1em 0;
+  }
+  #toc nav {
+    display: block;
+    height: calc(90vh - 84px);
+    bottom: 0;
+    padding: 0.5em 0 2em;
+    overflow: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+  }
+  #toc nav > ul  {
+    margin-bottom: 2em;
+  }
+  #toc ul {
+    margin: 0 0 0 4px;
+    font-size: var(--small-font-size);
+  }
+  #toc ul p, #toc ul li {
+    margin: 2px 0;
+    line-height: 22px;
+  }
+  img { /* future proofing */
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* pagination */
+@media print {
+  body {
+    width: 100%;
+  }
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+  #n-copyright-notice {
+    border-bottom: none;
+  }
+  #toc, #n-introduction {
+    page-break-before: always;
+  }
+  #toc {
+    border-top: none;
+    padding-top: 0;
+  }
+  figure, pre {
+    page-break-inside: avoid;
+  }
+  figure {
+    overflow: scroll;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  h2+*, h3+*, h4+*, h5+*, h6+* {
+    page-break-before: avoid;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 10pt;
+  }
+  table {
+    border: 1px solid #ddd;
+  }
+  td {
+    border-top: 1px solid #ddd;
+  }
+}
+
+@page :first {
+  padding-top: 0;
+  @top-left {
+    content: normal;
+    border: none;
+  }
+  @top-center {
+    content: normal;
+    border: none;
+  }
+  @top-right {
+    content: normal;
+    border: none;
+  }
+}
+
+@page {
+  size: A4;
+  margin-bottom: 45mm;
+  padding-top: 20px;
+}
+
+/* Changes introduced to fix issues found during implementation */
+
+/* Separate body from document info even without intervening H1 */
+section {
+  clear: both;
+}
+
+/* Top align author divs, to avoid names without organization dropping level with org names */
+.author {
+  vertical-align: top;
+}
+
+/* Style section numbers with more space between number and title */
+.section-number {
+  padding-right: 0.5em;
+}
+
+/* Add styling for a link in the ToC that points to the top of the document */
+a.toplink {
+  float: right;
+  margin: 8px 0.5em 0;
+}
+
+/* Fix the dl styling to match the RFC 7992 attributes */
+dl > dt,
+dl.dlParallel > dt {
+  float: left;
+  margin-right: 1em;
+}
+dl.dlNewline > dt {
+  float: none;
+}
+
+/* Provide styling for table cell text alignment */
+table .text-left, table .text-left {
+  text-align: left;
+}
+table .text-center, table .text-center {
+  text-align: center;
+}
+table .text-right, table .text-right {
+  text-align: right;
+}
+
+/* Make the alternative author contact information look less like just another
+   author, and group it closer with the primary author contact information */
+.alternative-contact {
+  margin: 0.5em 0 0.25em 0;
+}
+address .non-ascii {
+  margin: 0 0 0 2em;
+}
+
+/* With it being possible to set tables with alignment
+  left, center, and right, { width: 100%; } does not make sense */
+table {
+  width: auto;
+}
+
+/* Avoid reference text that sits in a block with very wide left margin,
+   because of a long floating dt label.*/
+.references dd {
+  overflow: visible;
+}
+
+/* Control caption placement */
+caption {
+  caption-side: bottom;
+}
+
+/* Limit the width of the author address vcard, so names in right-to-left
+   script don't end up on the other side of the page. */
+
+address.vcard {
+  max-width: 20em;
+  margin-right: auto;
+}
+
+/* For address alignment dependent on LTR or RTL scripts */
+address div.left {
+  text-align: left;
+}
+address div.right {
+  text-align: right;
+}
+
+/* Give the table caption label the same styling as the figcaption */
+
+@media print {
+  .toplink {
+    display: none;
+  }
+
+  /* avoid overwriting the top border line with the ToC header */
+  #toc {
+    padding-top: 1px;
+  }
+
+  /* Avoid page breaks inside dl and author address entries */
+  dd {
+    page-break-before: avoid;
+  }
+  .vcard {
+    page-break-inside: avoid;
+  }
+
+}
+/* Tweak the bcp14 keyword presentation */
+.bcp14 {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* Dark mode. */
+@media (prefers-color-scheme: dark) {
+:root {
+  --background-color: #121212;
+  --text-color: #f0f0f0;
+  --title-color: #fff;
+  --link-color: #4da4f0;
+  --highlight-color: #282828;
+  --line-color: #444;
+  --pilcrow-weak: #444;
+  --pilcrow-strong: #666;
+  scrollbar-color: #777 #333;
+}
+/* Trick: a prefix match works because only black and white are allowed */
+svg [stroke="black"], svg [stroke^="#000"] {
+  stroke: var(--text-color);
+}
+svg [stroke="white"], svg [stroke^="#fff"] {
+  stroke: var(--background-color);
+}
+svg [fill="black"], svg [fill^="#000"], svg :not([fill]) {
+  fill: var(--text-color);
+}
+svg [stroke="fill"], svg [fill^="#fff"] {
+  fill: var(--background-color);
+}
+}
+</style>
+
+</head>
+<body>
+<table class="ears">
+<thead><tr>
+<td class="left">Internet-Draft</td>
+<td class="center">IAB AID Workshop 2021</td>
+<td class="right">May 2022</td>
+</tr></thead>
+<tfoot><tr>
+<td class="left">ten Oever, et al.</td>
+<td class="center">Expires 1 December 2022</td>
+<td class="right">[Page]</td>
+</tr></tfoot>
+</table>
+<div id="external-metadata" class="document-information"></div>
+<div id="internal-metadata" class="document-information">
+<dl id="identifiers">
+<dt class="label-workgroup">Workgroup:</dt>
+<dd class="workgroup">Network Working Group</dd>
+<dt class="label-internet-draft">Internet-Draft:</dt>
+<dd class="internet-draft">draft-iab-aid-workshop-latest</dd>
+<dt class="label-published">Published:</dt>
+<dd class="published">
+<time datetime="2022-05-30" class="published">30 May 2022</time>
+    </dd>
+<dt class="label-intended-status">Intended Status:</dt>
+<dd class="intended-status">Informational</dd>
+<dt class="label-expires">Expires:</dt>
+<dd class="expires"><time datetime="2022-12-01">1 December 2022</time></dd>
+<dt class="label-authors">Authors:</dt>
+<dd class="authors">
+<div class="author">
+      <div class="author-name">N. ten Oever</div>
+<div class="org">University of Amsterdam</div>
+</div>
+<div class="author">
+      <div class="author-name">C. Cath</div>
+</div>
+<div class="author">
+      <div class="author-name">M. Kühlewind</div>
+<div class="org">Ericsson</div>
+</div>
+<div class="author">
+      <div class="author-name">C. S. Perkins</div>
+<div class="org">University of Glasgow</div>
+</div>
+</dd>
+</dl>
+</div>
+<h1 id="title">Report from the IAB Workshop on Analyzing IETF Data (AID), 2021</h1>
+<section id="section-abstract">
+      <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
+<p id="section-abstract-1">The 'Show me the numbers: Workshop on Analyzing IETF Data (AID)' was convened by the Internet Architecture Board (IAB) from November 29 to December 2 and hosted by the IN-SIGHT.it project at the University of Amsterdam, however, converted to an online only event. The workshop was conducted based on two discussion parts and a hackathon activity in between. This report summarizes the workshop's discussion and identifies topics that warrant future work and consideration.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-2">Note that this document is a report on the proceedings of the workshop. The views and positions documented in this report are those of the workshop participants and do not necessarily reflect IAB views and positions.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
+</section>
+<section class="note rfcEditorRemove" id="section-note.1">
+      <h2 id="name-discussion-venues">
+<a href="#name-discussion-venues" class="section-name selfRef">Discussion Venues</a>
+      </h2>
+<p id="section-note.1-1">This note is to be removed before publishing as an RFC.<a href="#section-note.1-1" class="pilcrow">¶</a></p>
+<p id="section-note.1-2">Source for this draft and an issue tracker can be found at
+    <span><a href="https://github.com/intarchboard/workshop-aid">https://github.com/intarchboard/workshop-aid</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
+</section>
+<div id="status-of-memo">
+<section id="section-boilerplate.1">
+        <h2 id="name-status-of-this-memo">
+<a href="#name-status-of-this-memo" class="section-name selfRef">Status of This Memo</a>
+        </h2>
+<p id="section-boilerplate.1-1">
+        This Internet-Draft is submitted in full conformance with the
+        provisions of BCP 78 and BCP 79.<a href="#section-boilerplate.1-1" class="pilcrow">¶</a></p>
+<p id="section-boilerplate.1-2">
+        Internet-Drafts are working documents of the Internet Engineering Task
+        Force (IETF). Note that other groups may also distribute working
+        documents as Internet-Drafts. The list of current Internet-Drafts is
+        at <span><a href="https://datatracker.ietf.org/drafts/current/">https://datatracker.ietf.org/drafts/current/</a></span>.<a href="#section-boilerplate.1-2" class="pilcrow">¶</a></p>
+<p id="section-boilerplate.1-3">
+        Internet-Drafts are draft documents valid for a maximum of six months
+        and may be updated, replaced, or obsoleted by other documents at any
+        time. It is inappropriate to use Internet-Drafts as reference
+        material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
+<p id="section-boilerplate.1-4">
+        This Internet-Draft will expire on 1 December 2022.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="copyright">
+<section id="section-boilerplate.2">
+        <h2 id="name-copyright-notice">
+<a href="#name-copyright-notice" class="section-name selfRef">Copyright Notice</a>
+        </h2>
+<p id="section-boilerplate.2-1">
+            Copyright (c) 2022 IETF Trust and the persons identified as the
+            document authors. All rights reserved.<a href="#section-boilerplate.2-1" class="pilcrow">¶</a></p>
+<p id="section-boilerplate.2-2">
+            This document is subject to BCP 78 and the IETF Trust's Legal
+            Provisions Relating to IETF Documents
+            (<span><a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a></span>) in effect on the date of
+            publication of this document. Please review these documents
+            carefully, as they describe your rights and restrictions with
+            respect to this document. Code Components extracted from this
+            document must include Revised BSD License text as described in
+            Section 4.e of the Trust Legal Provisions and are provided without
+            warranty as described in the Revised BSD License.<a href="#section-boilerplate.2-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="toc">
+<section id="section-toc.1">
+        <a href="#" onclick="scroll(0,0)" class="toplink">▲</a><h2 id="name-table-of-contents">
+<a href="#name-table-of-contents" class="section-name selfRef">Table of Contents</a>
+        </h2>
+<nav class="toc"><ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.1">
+            <p id="section-toc.1-1.1.1" class="keepWithNext"><a href="#section-1" class="xref">1</a>.  <a href="#name-introduction" class="xref">Introduction</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2">
+            <p id="section-toc.1-1.2.1"><a href="#section-2" class="xref">2</a>.  <a href="#name-workshop-scope-and-discussi" class="xref">Workshop Scope and Discussion</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.1">
+                <p id="section-toc.1-1.2.2.1.1" class="keepWithNext"><a href="#section-2.1" class="xref">2.1</a>.  <a href="#name-tools-data-and-methods" class="xref">Tools, data, and methods</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.2">
+                <p id="section-toc.1-1.2.2.2.1" class="keepWithNext"><a href="#section-2.2" class="xref">2.2</a>.  <a href="#name-observations-on-affiliation" class="xref">Observations on affiliation and industry control</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.3">
+                <p id="section-toc.1-1.2.2.3.1"><a href="#section-2.3" class="xref">2.3</a>.  <a href="#name-community-and-diversity" class="xref">Community and diversity</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.4">
+                <p id="section-toc.1-1.2.2.4.1"><a href="#section-2.4" class="xref">2.4</a>.  <a href="#name-publications-process-and-de" class="xref">Publications, process, and decision-making</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.5">
+                <p id="section-toc.1-1.2.2.5.1"><a href="#section-2.5" class="xref">2.5</a>.  <a href="#name-environmental-sustainabilit" class="xref">Environmental Sustainability</a></p>
+</li>
+            </ul>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
+            <p id="section-toc.1-1.3.1"><a href="#section-3" class="xref">3</a>.  <a href="#name-hackathon-report" class="xref">Hackathon Report</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="xref">4</a>.  <a href="#name-position-papers" class="xref">Position Papers</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1">
+                <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="xref">4.1</a>.  <a href="#name-tools-data-and-methods-2" class="xref">Tools, data, and methods</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.2">
+                <p id="section-toc.1-1.4.2.2.1"><a href="#section-4.2" class="xref">4.2</a>.  <a href="#name-observations-on-affiliation-" class="xref">Observations on affiliation and industry control</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.3">
+                <p id="section-toc.1-1.4.2.3.1"><a href="#section-4.3" class="xref">4.3</a>.  <a href="#name-community-and-diversity-2" class="xref">Community and diversity</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.4">
+                <p id="section-toc.1-1.4.2.4.1"><a href="#section-4.4" class="xref">4.4</a>.  <a href="#name-publications-process-and-dec" class="xref">Publications, process, and decision-making</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.5">
+                <p id="section-toc.1-1.4.2.5.1"><a href="#section-4.5" class="xref">4.5</a>.  <a href="#name-environmental-sustainability" class="xref">Environmental Sustainability</a></p>
+</li>
+            </ul>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="xref">5</a>.  <a href="#name-workshop-participants" class="xref">Workshop participants</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="xref">6</a>.  <a href="#name-program-committee" class="xref">Program Committee</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
+            <p id="section-toc.1-1.7.1"><a href="#section-7" class="xref">7</a>.  <a href="#name-acknowledgments" class="xref">Acknowledgments</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
+            <p id="section-toc.1-1.8.1"><a href="#section-8" class="xref">8</a>.  <a href="#name-annexes" class="xref">Annexes</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.1">
+                <p id="section-toc.1-1.8.2.1.1"><a href="#section-8.1" class="xref">8.1</a>.  <a href="#name-annex-1-data-taxonomy" class="xref">Annex 1 - Data Taxonomy</a></p>
+</li>
+            </ul>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9">
+            <p id="section-toc.1-1.9.1"><a href="#appendix-A" class="xref"></a><a href="#name-authors-addresses" class="xref">Authors' Addresses</a></p>
+</li>
+        </ul>
+</nav>
+</section>
+</div>
+<div id="introduction">
+<section id="section-1">
+      <h2 id="name-introduction">
+<a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
+      </h2>
+<p id="section-1-1">The IETF, as an international Standards Developing Organization (SDO), hosts a diverse set of data including on the organization's history, development, and current standardization activities, including of Internet protocols and its institutions. A large portion of this data is publicly available, yet it is underutilized as a tool to inform the work in the IETF proper or the broader research community focused on topics like Internet governance and trends in ICT standard-setting.<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-2">The aim of the IAB Workshop on Analyzing IETF Data (AID) 2021 was to study how IETF data is currently used, understand what insights can be drawn from that data, and to explore open questions around how that data may be further used in future.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-3">These questions can inform a research agenda drawing from IETF data, that fosters further collaborative work among interested parties, ranging from academia and civil society to industry and IETF leadership.<a href="#section-1-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="workshop-scope-and-discussion">
+<section id="section-2">
+      <h2 id="name-workshop-scope-and-discussi">
+<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-workshop-scope-and-discussi" class="section-name selfRef">Workshop Scope and Discussion</a>
+      </h2>
+<p id="section-2-1">The workshop was organized with two all-group discussion slots at the beginning and the end of the workshop. In between the workshop participants organized hacakthon activities, based on topics identifed during the initial discussion and submitted position papers. The follow topic areas have been identified and discussed.<a href="#section-2-1" class="pilcrow">¶</a></p>
+<div id="tools-data-and-methods">
+<section id="section-2.1">
+        <h3 id="name-tools-data-and-methods">
+<a href="#section-2.1" class="section-number selfRef">2.1. </a><a href="#name-tools-data-and-methods" class="section-name selfRef">Tools, data, and methods</a>
+        </h3>
+<p id="section-2.1-1">The IETF holds a wide range of data sources. The main ones used are the <a href="https://mailarchive.ietf.org/arch/">mailinglist archives</a>, <a href="https://www.ietf.org/standards/rfcs/">RFCs</a>, and <a href="https://datatracker.ietf.org/">the datatracker</a>. The latter provides information on participants, authors, meeting proceedings, minutes <a href="https://notes.ietf.org/iab-aid-datatracker-database-overview#">and more</a>. Furthermore there are <a href="https://www.ietf.org/policies/web-analytics/">statistics for the IETF websites</a>, working group Github repositories, IETF <a href="https://www.ietf.org/blog/ietf-community-survey-2021/">survey data</a> and there was discussion about the utility of download statistics for the RFCs itself from different repos.<a href="#section-2.1-1" class="pilcrow">¶</a></p>
+<p id="section-2.1-2">There are a wide range of tools to analyze this data, produced by IETF participants or researchers interestested in the work of the IETF. Two projects that presented their work at the workshop were <a href="https://bigbang-py.readthedocs.io/en/latest/">BigBang</a> and Sodestream's <a href="https://github.com/glasgow-ipl/ietfdata">IETFdata</a> library; the RFC Prolog Database was described in a submitted paper (see Section <a href="#positionpapers" class="xref">Section 4</a> below). These projects could be used to add additional insights to the existing <a href="https://www.arkko.com/tools/docstats.html">IETF statistics</a> page and the <a href="https://datatracker.ietf.org/stats/">datatracker statistics</a>, e.g., related to gender questions, however, privacy issues andd implication of making such data publicly available were discussed as well.<a href="#section-2.1-2" class="pilcrow">¶</a></p>
+<p id="section-2.1-3">The datatracker itself is a community tool that welcomes contributions, e.g. for additions to the existing interfaces or the statistics page directly (see <a href="https://notes.ietf.org/iab-aid-datatracker-database-overview">https://notes.ietf.org/iab-aid-datatracker-database-overview</a>). Instructions how to set up a local development environment can be found, at the time of the workshop, at <a href="https://notes.ietf.org/iab-aid-data-resources">https://notes.ietf.org/iab-aid-data-resources</a>. Questions or any discussion can be issued to tools-discuss@ietf.org.<a href="#section-2.1-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="observations-on-affiliation-and-industry-control">
+<section id="section-2.2">
+        <h3 id="name-observations-on-affiliation">
+<a href="#section-2.2" class="section-number selfRef">2.2. </a><a href="#name-observations-on-affiliation" class="section-name selfRef">Observations on affiliation and industry control</a>
+        </h3>
+<p id="section-2.2-1">A large portion of the submitted position papers indicated interest in researching questions about industry control in the standardization process (vs. individual contributions in personal capacity), where industry control covers both, technical contribution and the ability to successfully standardize these contribution as well as competition on leadership roles. To assess these question it has ben discussed to investigate participant's affiliations including "indirect" affiliation e.g. by funding and changes in affiliation as well as the nessecarity to model company characteristics or stakeholder groups.<a href="#section-2.2-1" class="pilcrow">¶</a></p>
+<p id="section-2.2-2">Discussions about the analysis of IETF data shows that affiliation dynamics are hard to capture, due to the specifics of how the data is entered but also because of larger social dynamics. On the side of IETF data capture, affiliation is an open text field, which causes people to write their affiliation down in different ways (capitilization, space, word seperation, etc). A common data format could contribute to analyses that compare SDO performance and behavior of actors inside and across standards bodies. To help this a draft data model has been developed during hackathon portion of the workshop which can found as Annex 1 - Data Taxonomy.<a href="#section-2.2-2" class="pilcrow">¶</a></p>
+<p id="section-2.2-3">Furthermore, there is the issue of mergers and acquisitions and subsidiary companies. There is no authorotative exogenous source of variation for affiliation changes, so hand-collected and curated data is used to analyze changes in affiliation over time. While this approach is imperfect, conclusions can be drawn from the data. For example, in the case of mergers or acquisition where a small organizations joins a large organization, this results in a statistically significant increase in liklihood of an individual being put in a working group chair position (see <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Baron.pdf">BaronKanevskaia</a>).<a href="#section-2.2-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="community-and-diversity">
+<section id="section-2.3">
+        <h3 id="name-community-and-diversity">
+<a href="#section-2.3" class="section-number selfRef">2.3. </a><a href="#name-community-and-diversity" class="section-name selfRef">Community and diversity</a>
+        </h3>
+<p id="section-2.3-1">High interest from the workshop participants was also on using existing data to better understand who the current IETF community is, especially in terms of diversity, and how to potentially increase diversity and thereby inclusivity, e.g. understanding if are there certain groups or lists that "drive people away" and why. Inclusivity and transparency about the standardization process are generally important to keep the Internet and its development process viable. As commented during the workshop discussion, when measuring and evaluating different angles of diversity it is also important to understand the actual goals that are intended when increasing diversity, e.g. in order to increase competence (mainly technical diversity from different companies and stakeholder groups) or relevance (also regional diversity and international footprint).<a href="#section-2.3-1" class="pilcrow">¶</a></p>
+<p id="section-2.3-2">The discussion on community and diversity spanned from methods that draw from novel text mining, time series clustering, graph mining and psycholinguistic approaches to understand the consensus mechanism to more speculative approaches about what it would take to build a feminist Internet. The discussion also covered the data needed to measure who is in the community and how diverse it is.<a href="#section-2.3-2" class="pilcrow">¶</a></p>
+<p id="section-2.3-3">The discussion highlighted that part of the challenge is defining what diversity means, how to measure it, or as one participant highlighted to define "who the average IETF is". The question was also raised what to do about missing data or non-participating or underrepresented communities, like women, individuals from the African continent and network operators. In terms of how IETF data is structured, various researchers mentioned that it is hard track conversations as mail threads, split, merge and change. The ICANN-at-large model came up as an example of how to involve relevant stakeholders in the IETF that are currently not present. Vice versa, it is also interesting for outside communities (especially policy makers) to get a sense of who the IETF community is and keep them updated.<a href="#section-2.3-3" class="pilcrow">¶</a></p>
+<p id="section-2.3-4">The human element of the community and diversity was stressed, in order to understand the IETF community's diversity it is important to talk to people (beyond text analysis) and in order to ensure inclusivity individual participants must make an effort to, as one participant recounted, tell them their participation is valuable.<a href="#section-2.3-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="publications-process-and-decision-making">
+<section id="section-2.4">
+        <h3 id="name-publications-process-and-de">
+<a href="#section-2.4" class="section-number selfRef">2.4. </a><a href="#name-publications-process-and-de" class="section-name selfRef">Publications, process, and decision-making</a>
+        </h3>
+<p id="section-2.4-1">A number of submissions focussed on the RFC publication process, on the
+development of standards and other RFCs in the IETF, and on how the IETF
+makes decisions.
+This included work on both technical decisions about the content of the
+standards, but also procedural and process decisions, and questions around
+how we can understand, model, and perhaps improve the standards process.
+Some of the work considered what makes a successful RFC, how are RFCs
+used and referenced, and what we can learn about importance of a topic
+by studying the RFCs, drafts, and email discussion.<a href="#section-2.4-1" class="pilcrow">¶</a></p>
+<p id="section-2.4-2">There were three sets of questions to consider in this area. The first
+related to success and failure of standards, and considered what makes
+a successful/good RFC? What makes the process of RFC making successful?
+And how are RFCs used and referenced once published?
+Discussion considered how to better understand the path from an internet
+draft to an RFC, to see if there are specific factors that lead to successful
+development of a draft into an RFC. Participants explored the extent to
+which this depends on the seniority and experience of the authors, on the
+topic and IETF area, extent and scope of mailing list discussion, and other
+factors, to understand whether success of a draft can be predicted, and
+whether interventions can be developed to increase the likelihood of
+success for work.<a href="#section-2.4-2" class="pilcrow">¶</a></p>
+<p id="section-2.4-3">The second question was around decision making. How does the IETF make
+design decisions? What are the bottlenecks in effective decision making?
+When is a decision made? And what is the decision? Difficulties here lie
+in capturing decisions and the results of consensus calls early in the
+process, and understanding the factors that lead to effective decision
+making.<a href="#section-2.4-3" class="pilcrow">¶</a></p>
+<p id="section-2.4-4">Finally, there were questions around what can be learn about protocols by
+studying IETF publications, processes, and decision making? For example,
+are there insights to be gained around how security concerns are discussed
+and considered in the development of standards? Is it possible to verify
+correctness of protocols and/or detect ambiguities? What can be learnt
+by extracting insights from implementations and activities on implementation
+efforts?<a href="#section-2.4-4" class="pilcrow">¶</a></p>
+<p id="section-2.4-5">Answers to these questions come from analysis of IETF emails, RFCs and
+Internet-Drafts, meeting minutes, recordings, Github data, and external
+data such as surveys, etc.<a href="#section-2.4-5" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="environmental-sustainability">
+<section id="section-2.5">
+        <h3 id="name-environmental-sustainabilit">
+<a href="#section-2.5" class="section-number selfRef">2.5. </a><a href="#name-environmental-sustainabilit" class="section-name selfRef">Environmental Sustainability</a>
+        </h3>
+<p id="section-2.5-1">The final discussion session considered environmental sustainability. It
+discussed what is the IETF's role with respect to climate change both in
+terms on what is the environmental impact of the way the IETF develops
+standards, and in terms of what is the environmental impact of the
+standards the IETF develops?<a href="#section-2.5-1" class="pilcrow">¶</a></p>
+<p id="section-2.5-2">Discussion started by considering how sustainable are IETF meetings,
+focussing on how much CO2 emissions are IETF meetings responsible for
+and how can we make the IETF more sustainable. Analysis looked at the
+home locations of participants, meeting locations, and carbon footprint
+of air travel and remote attendance, to estimate the carbon costs of an
+IETF meeting. Initial results suggest that the costs of holding multiple
+in-person IETF meetings per year are likely unsustainable in terms of carbon
+emission, although the analysis is ongoing.<a href="#section-2.5-2" class="pilcrow">¶</a></p>
+<p id="section-2.5-3">Discussion also considered to what extent are climate impacts considered in
+the development and standardization of Internet protocols? It reviewed the
+text of RFCs and active working group drafts, looking for relevant keywords
+to highlight the extent to which climate change, energy efficiency, and
+related topics are considered in the design of Internet protocols, to show
+the limited extent to which these topics have been considered. Ongoing work
+is considering meeting minutes and mail archives, to get a fuller picture,
+but initial results show only limited consideration of these important
+issues.<a href="#section-2.5-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+</section>
+</div>
+<div id="hackathon-report">
+<section id="section-3">
+      <h2 id="name-hackathon-report">
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-hackathon-report" class="section-name selfRef">Hackathon Report</a>
+      </h2>
+<p id="section-3-1">The middle two days of the workshop were organized as a hackathon. The aims of the hackathon were to 1) acquaint people with the different data sources and analysis methods, 2) seek to answer some of the questions that came up during presentations on the first day of the workshop, 3) foster collaboration among researchers to grow a community of IETF data researchers.<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-2">At the end of Day 1, the plenary presentation day, people were invited to divide themselves in groups who selected their own respective facilitators. All groups had their own work space and could use their own communication methods and channels, or use IETF's gather.town. Furthermore, daily check-ins were organized during the two hackathon days. At the final day the hackathon groups presented their work in a plenary session.<a href="#section-3-2" class="pilcrow">¶</a></p>
+<p id="section-3-3">The objectives of the hackathon, according to the co-chairs, have been met, and the output significantly exceeded expectations. It allowed for more interaction then academic conferences and produced some actual research results by people who had not collaborated before the workshop.<a href="#section-3-3" class="pilcrow">¶</a></p>
+<p id="section-3-4">Future workshops that choose to integrate a hackathon could consider to ask participants to submit groups, issues, and questions beforehand (potentially as part of the positions paper or the sign-up process) to facilitate the formation of groups.<a href="#section-3-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="positionpapers">
+<section id="section-4">
+      <h2 id="name-position-papers">
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-position-papers" class="section-name selfRef">Position Papers</a>
+      </h2>
+<div id="tools-data-and-methods-1">
+<section id="section-4.1">
+        <h3 id="name-tools-data-and-methods-2">
+<a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-tools-data-and-methods-2" class="section-name selfRef">Tools, data, and methods</a>
+        </h3>
+<p id="section-4.1-1">Sebastian Benthall <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Benthall.pdf">Using Complex Systems Analysis to Identify Organizational Interventions</a><a href="#section-4.1-1" class="pilcrow">¶</a></p>
+<p id="section-4.1-2">Stephen McQuistin, Colin Perkins <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/McQuistin.pdf">The ietfdata Library</a><a href="#section-4.1-2" class="pilcrow">¶</a></p>
+<p id="section-4.1-3">Marc Petit-Huguenin <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Petit-Huguenin.txt">The RFC Prolog Database</a><a href="#section-4.1-3" class="pilcrow">¶</a></p>
+<p id="section-4.1-4">Jari Arkko <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Arkko.pdf">Observations about IETF process measurements</a><a href="#section-4.1-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="observations-on-affiliation-and-industry-control-1">
+<section id="section-4.2">
+        <h3 id="name-observations-on-affiliation-">
+<a href="#section-4.2" class="section-number selfRef">4.2. </a><a href="#name-observations-on-affiliation-" class="section-name selfRef">Observations on affiliation and industry control</a>
+        </h3>
+<p id="section-4.2-1">Justus Baron, Olia Kanevskaia <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Baron.pdf">Competition for Leadership Positions in Standards Development Organizations</a><a href="#section-4.2-1" class="pilcrow">¶</a></p>
+<p id="section-4.2-2">Nick Doty <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Doty.pdf">Analyzing IETF Data: Changing affiliations</a><a href="#section-4.2-2" class="pilcrow">¶</a></p>
+<p id="section-4.2-3">Don Le <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Le.pdf">Position Paper</a><a href="#section-4.2-3" class="pilcrow">¶</a></p>
+<p id="section-4.2-4">Elizaveta Yachmeneva <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Yachmeneva.pdf">Research Proposal</a><a href="#section-4.2-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="community-and-diversity-1">
+<section id="section-4.3">
+        <h3 id="name-community-and-diversity-2">
+<a href="#section-4.3" class="section-number selfRef">4.3. </a><a href="#name-community-and-diversity-2" class="section-name selfRef">Community and diversity</a>
+        </h3>
+<p id="section-4.3-1">Priyanka Sinha, Michael Ackermann, Pabitra Mitra, Arvind Singh, Amit Kumar Agrawal <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Sinha.pdf">Characterizing the IETF through its consensus mechanisms</a><a href="#section-4.3-1" class="pilcrow">¶</a></p>
+<p id="section-4.3-2">Mallory Knodel <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Knodel.pdf">Would feminists have built a better internet?</a><a href="#section-4.3-2" class="pilcrow">¶</a></p>
+<p id="section-4.3-3">Wes Hardaker, Genevieve Bartlett <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Hardaker.pdf">Identifying temporal trends in IETF participation</a><a href="#section-4.3-3" class="pilcrow">¶</a></p>
+<p id="section-4.3-4">Lars Eggert <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Eggert.pdf">Who is the Average IETF Participant?</a><a href="#section-4.3-4" class="pilcrow">¶</a></p>
+<p id="section-4.3-5">Emanuele Tarantino, Justus Baron, Bernhard Ganglmair, Nicola Persico, Timothy Simcoe <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Tarantino.pdf">Representation is Not Sufficient for Selecting Gender Diversity</a><a href="#section-4.3-5" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="publications-process-and-decision-making-1">
+<section id="section-4.4">
+        <h3 id="name-publications-process-and-dec">
+<a href="#section-4.4" class="section-number selfRef">4.4. </a><a href="#name-publications-process-and-dec" class="section-name selfRef">Publications, process, and decision-making</a>
+        </h3>
+<p id="section-4.4-1">Michael Welzl, Carsten Griwodz, Safiqul Islam <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Welzl.pdf">Understanding Internet Protocol Design Decisions</a><a href="#section-4.4-1" class="pilcrow">¶</a></p>
+<p id="section-4.4-2">Ignacio Castro et al <a href="https://dl.acm.org/doi/abs/10.1145/3487552.3487821">Characterising the IETF through the lens of RFC deployment</a><a href="#section-4.4-2" class="pilcrow">¶</a></p>
+<p id="section-4.4-3">Carsten Griwodz, Safiqul Islam, Michael Welzl <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Griwodz.pdf">The Impact of Continuity</a><a href="#section-4.4-3" class="pilcrow">¶</a></p>
+<p id="section-4.4-4">Paul Hoffman <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Hoffman.pdf">RFCs Change</a><a href="#section-4.4-4" class="pilcrow">¶</a></p>
+<p id="section-4.4-5">Xue Li, Sara Magliacane, Paul Groth <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Groth.pdf">The Challenges of Cross-Document Coreference Resolution in Email</a><a href="#section-4.4-5" class="pilcrow">¶</a></p>
+<p id="section-4.4-6">Amelia Andersdotter <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Andersdotter.pdf">Project in time series analysis: e-mailing lists</a><a href="#section-4.4-6" class="pilcrow">¶</a></p>
+<p id="section-4.4-7">Mark McFadden <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/McFadden.pdf">Position Paper</a><a href="#section-4.4-7" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="environmental-sustainability-1">
+<section id="section-4.5">
+        <h3 id="name-environmental-sustainability">
+<a href="#section-4.5" class="section-number selfRef">4.5. </a><a href="#name-environmental-sustainability" class="section-name selfRef">Environmental Sustainability</a>
+        </h3>
+<p id="section-4.5-1">Christoph Becker <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Becker.pdf">Towards Environmental Sustainability with the IETF</a><a href="#section-4.5-1" class="pilcrow">¶</a></p>
+<p id="section-4.5-2">Daniel Migault <a href="https://www.iab.org/wp-content/IAB-uploads/2021/11/Migault.pdf">CO2eq: Estimating Meetings' Air Flight CO2 Equivalent Emissions: An Illustrative Example with IETF meetings</a><a href="#section-4.5-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+</section>
+</div>
+<div id="participants">
+<section id="section-5">
+      <h2 id="name-workshop-participants">
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-workshop-participants" class="section-name selfRef">Workshop participants</a>
+      </h2>
+<p id="section-5-1">Bernhard Ganglmair,
+Carsten Griwodz,
+Christoph Becker,
+Colin Perkins,
+Corinne Cath,
+Daniel Migault,
+Don Le,
+Effy Xue Li,
+Elizaveta Yachmeneva,
+Francois Ortolan,
+Greg Wood,
+Ignacio Castro,
+Jari Arkko,
+Justus Baron,
+Karen O'Donoghue,
+Lars Eggert,
+Mallory Knodel,
+Marc Petit-Huguenin,
+Mark McFadden,
+Michael Welzl,
+Mirja Kuehlewind,
+Nick Doty,
+Niels ten Oever,
+Priyanka Sinha,
+Safiqul Islam,
+Sebastian Benthall,
+Stephen McQuistin,
+Wes Hardaker, and
+Zhenbin Li.<a href="#section-5-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="program-committee">
+<section id="section-6">
+      <h2 id="name-program-committee">
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-program-committee" class="section-name selfRef">Program Committee</a>
+      </h2>
+<p id="section-6-1">The workshop Program Committee members were Niels ten Oever (chair, University of Amsterdam), Colin Perkins (chair, IRTF, University of Glasgow), Corinne Cath (chair, Oxford Internet Institute), Mirja Kuehlewind (IAB, Ericsson), Zhenbin Li (IAB, Huawei), and Wes Hardaker (IAB, USC/ISI).<a href="#section-6-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="acknowledgments">
+<section id="section-7">
+      <h2 id="name-acknowledgments">
+<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
+      </h2>
+<p id="section-7-1">The Program Committee wishes to extend its thanks to Cindy Morgan for logistics support and to Kate Pundyk for notetaking.<a href="#section-7-1" class="pilcrow">¶</a></p>
+<p id="section-7-2">Efforts put in this workshop by Niels ten Oever was made possible through funding from the Dutch Research Council (NWO) through grant MVI.19.032 as part of the programme 'Maatschappelijk Verantwoord Innoveren (MVI)'.<a href="#section-7-2" class="pilcrow">¶</a></p>
+<p id="section-7-3">We would like to thank the Ford Foundation for their support that made participation of Corinne Cath, Kate Pundyk, and Mallory Knodel possible (grant number, 136179, 2020).<a href="#section-7-3" class="pilcrow">¶</a></p>
+<p id="section-7-4">Efforts in the organization of this workshop by Niels ten Oever were supported in part by the UK Engineering and Physical Sciences Research Council under grant EP/S036075/1.<a href="#section-7-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="annexes">
+<section id="section-8">
+      <h2 id="name-annexes">
+<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-annexes" class="section-name selfRef">Annexes</a>
+      </h2>
+<div id="annex-1-data-taxonomy">
+<section id="section-8.1">
+        <h3 id="name-annex-1-data-taxonomy">
+<a href="#section-8.1" class="section-number selfRef">8.1. </a><a href="#name-annex-1-data-taxonomy" class="section-name selfRef">Annex 1 - Data Taxonomy</a>
+        </h3>
+<div class="alignLeft art-text artwork" id="section-8.1-1">
+<pre>
+A Draft Data Taxonomy for SDO Data:
+
+Organization:
+  Organization Subsidiary
+  Time
+  Email domain
+  Website domain
+  Size
+          Revenue, annual
+          Number of employees
+  Org - Affiliation Category (Labels) ; 1 : N
+    Association
+    Advertising Company
+    Chipmaker
+    Content Distribution Network
+    Content Providers
+    Consulting
+    Cloud Provider
+    Cybersecurity
+    Financial Institution
+    Hardware vendor
+    Internet Registry
+    Infrastructure Company
+    Networking Equipment Vendor
+    Network Service Provider
+    Regional Standards Body
+    Regulatory Body
+    Research and Development Institution
+    Software Provider
+    Testing and Certification
+    Telecommunications Provider
+    Satellite Operator
+
+Org - Stakeholder Group : 1 - 1
+    Academia
+    Civil Society
+    Private Sector -- including industry consortia and associations; state-owned and government-funded businesses
+    Government
+    Technical Community (IETF, ICANN, ETSI, 3GPP, oneM2M, etc)
+    Intergovernmental organization
+
+SDO:
+  Membership Types (SDO)
+  Members (Organizations for some, individuals for others…)
+  Membership organization
+    Regional SDO
+      ARIB
+      ATIS
+      CCSA
+      ETSI
+      TSDSI
+      TTA
+      TTC
+    Consortia
+
+Country of Origin:
+  Country Code
+
+Number of Participants
+
+Patents
+  Organization
+  Authors - 1 : N - Persons/Participants
+  Time
+  Region
+  Patent Pool
+  Standard Essential Patent
+    If so, for which standard
+
+Participant (An individual person)
+  Name
+  1: N - Emails
+    Time start / time end
+
+  1 : N : Affiliation
+    Organization
+    Position
+          Time start / end
+
+  1 : N : Affiliation - SDO
+    Position
+    SDO
+    Time
+
+  Email Domain (personal domain)
+
+  (Contribution data is in other tables)
+
+Document
+  Status of Document
+          Internet Draft
+          Work Item
+    Standard
+  Author -
+    Name
+          Affiliation - Organization
+    Person/Participant
+        (Affiliation from Authors only?)
+
+Data Source - Provenance for any data imported from an external data set
+
+Meeting
+  Time
+  Place
+  Agenda
+  Registrations
+    Name
+    Email
+    Affiliation
+</pre><a href="#section-8.1-1" class="pilcrow">¶</a>
+</div>
+</section>
+</div>
+</section>
+</div>
+<div id="authors-addresses">
+<section id="appendix-A">
+      <h2 id="name-authors-addresses">
+<a href="#name-authors-addresses" class="section-name selfRef">Authors' Addresses</a>
+      </h2>
+<address class="vcard">
+        <div dir="auto" class="left"><span class="fn nameRole">Niels ten Oever</span></div>
+<div dir="auto" class="left"><span class="org">University of Amsterdam</span></div>
+<div class="email">
+<span>Email:</span>
+<a href="mailto:mail@nielstenoever.net" class="email">mail@nielstenoever.net</a>
+</div>
+</address>
+<address class="vcard">
+        <div dir="auto" class="left"><span class="fn nameRole">Corinne Cath</span></div>
+<div class="email">
+<span>Email:</span>
+<a href="mailto:corinnecath@gmail.com" class="email">corinnecath@gmail.com</a>
+</div>
+</address>
+<address class="vcard">
+        <div dir="auto" class="left"><span class="fn nameRole">Mirja Kühlewind</span></div>
+<div dir="auto" class="left"><span class="org">Ericsson</span></div>
+<div class="email">
+<span>Email:</span>
+<a href="mailto:mirja.kuehlewind@ericsson.com" class="email">mirja.kuehlewind@ericsson.com</a>
+</div>
+</address>
+<address class="vcard">
+        <div dir="auto" class="left"><span class="fn nameRole">Colin Perkins</span></div>
+<div dir="auto" class="left"><span class="org">University of Glasgow</span></div>
+<div class="email">
+<span>Email:</span>
+<a href="mailto:csp@csperkins.org" class="email">csp@csperkins.org</a>
+</div>
+</address>
+</section>
+</div>
+<script>const toc = document.getElementById("toc");
+toc.querySelector("h2").addEventListener("click", e => {
+  toc.classList.toggle("active");
+});
+toc.querySelector("nav").addEventListener("click", e => {
+  toc.classList.remove("active");
+});
+</script>
+</body>
+</html>
