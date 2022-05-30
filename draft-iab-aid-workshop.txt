@@ -5,12 +5,12 @@
 Network Working Group                                       N. ten Oever
 Internet-Draft                                   University of Amsterdam
 Intended status: Informational                                   C. Cath
-Expires: 7 November 2022                                                
+Expires: 1 December 2022                                                
                                                             M. Kühlewind
                                                                 Ericsson
                                                            C. S. Perkins
                                                    University of Glasgow
-                                                              6 May 2022
+                                                             30 May 2022
 
 
     Report from the IAB Workshop on Analyzing IETF Data (AID), 2021
@@ -53,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 7 November 2022.
+   This Internet-Draft will expire on 1 December 2022.
 
 Copyright Notice
 
