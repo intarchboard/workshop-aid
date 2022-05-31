@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-05-03T00:57:28.402563+00:00",
+  "timestamp": "2022-05-31T00:58:32.740392+00:00",
   "repo": "intarchboard/workshop-aid",
   "labels": [
     {
@@ -456,7 +456,7 @@
       "labels": [],
       "body": "The previous wording sounded like the workshop was co-organized by these project/institutes which was not the case. This was an IAB workshop and I think we never really have sponsors (except for the physical host venue if applicable). Would the proposed wording work instead? Or @nllz maybe make a different proposal!",
       "createdAt": "2022-05-02T17:07:40Z",
-      "updatedAt": "2022-05-02T17:44:11Z",
+      "updatedAt": "2022-05-30T15:58:59Z",
       "baseRepository": "intarchboard/workshop-aid",
       "baseRefName": "main",
       "baseRefOid": "277ec902ea22bff06a50fdaf82f7400d76c828d1",
